@@ -15,7 +15,7 @@ C:/Users/nanping/Documents/2d_with_unity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49448
+50286
 Successfully changed project path to: C:/Users/nanping/Documents/2d_with_unity
 C:/Users/nanping/Documents/2d_with_unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/nanping/Documents/2d_with_unity
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12412] Host "[IP] 192.168.12.47 [Port] 0 [Flags] 2 [Guid] 620519591 [EditorId] 620519591 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DNPVOJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2656] Host "[IP] 192.168.12.47 [Port] 0 [Flags] 2 [Guid] 797840776 [EditorId] 797840776 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DNPVOJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12412] Host "[IP] 192.168.12.47 [Port] 0 [Flags] 2 [Guid] 620519591 [EditorId] 620519591 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DNPVOJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2656] Host "[IP] 192.168.12.47 [Port] 0 [Flags] 2 [Guid] 797840776 [EditorId] 797840776 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DNPVOJ4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 153.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 850.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -71,46 +71,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.120619 seconds.
-- Loaded All Assemblies, in  2.251 seconds
+Registered in 0.073266 seconds.
+- Loaded All Assemblies, in  2.390 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.376 seconds
-Domain Reload Profiling: 3608ms
-	BeginReloadAssembly (630ms)
+- Finished resetting the current domain, in  1.740 seconds
+Domain Reload Profiling: 4123ms
+	BeginReloadAssembly (743ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (179ms)
-	RebuildNativeTypeToScriptingClass (53ms)
-	initialDomainReloadingComplete (624ms)
-	LoadAllAssembliesAndSetupDomain (746ms)
-		LoadAssemblies (626ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (249ms)
+	RebuildNativeTypeToScriptingClass (76ms)
+	initialDomainReloadingComplete (450ms)
+	LoadAllAssembliesAndSetupDomain (863ms)
+		LoadAssemblies (730ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (728ms)
-			TypeCache.Refresh (723ms)
-				TypeCache.ScanAssembly (644ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (854ms)
+			TypeCache.Refresh (845ms)
+				TypeCache.ScanAssembly (779ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (1377ms)
+	FinalizeReload (1742ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1113ms)
+		SetupLoadedEditorAssemblies (1321ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (20ms)
+			InitializePlatformSupportModulesInManaged (82ms)
+			SetLoadedEditorAssemblies (23ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (736ms)
-			ProcessInitializeOnLoadMethodAttributes (308ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (907ms)
+			ProcessInitializeOnLoadMethodAttributes (298ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 3608ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  6.428 seconds
-Refreshing native plugins compatible for Editor in 69.20 ms, found 3 plugins.
+- Loaded All Assemblies, in  4.767 seconds
+Refreshing native plugins compatible for Editor in 50.06 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -128,48 +128,48 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.386 seconds
-Domain Reload Profiling: 11806ms
-	BeginReloadAssembly (802ms)
+- Finished resetting the current domain, in  9.554 seconds
+Domain Reload Profiling: 14293ms
+	BeginReloadAssembly (754ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (30ms)
+		DisableScriptedObjects (22ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (1ms)
 		CreateAndSetChildDomain (109ms)
-	RebuildCommonClasses (225ms)
-	RebuildNativeTypeToScriptingClass (47ms)
-	initialDomainReloadingComplete (189ms)
-	LoadAllAssembliesAndSetupDomain (5152ms)
-		LoadAssemblies (4322ms)
+	RebuildCommonClasses (191ms)
+	RebuildNativeTypeToScriptingClass (54ms)
+	initialDomainReloadingComplete (274ms)
+	LoadAllAssembliesAndSetupDomain (3463ms)
+		LoadAssemblies (2440ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1305ms)
-			TypeCache.Refresh (1032ms)
-				TypeCache.ScanAssembly (910ms)
-			ScanForSourceGeneratedMonoScriptInfo (212ms)
-			ResolveRequiredComponents (57ms)
-	FinalizeReload (5389ms)
+		AnalyzeDomain (1450ms)
+			TypeCache.Refresh (1202ms)
+				TypeCache.ScanAssembly (1091ms)
+			ScanForSourceGeneratedMonoScriptInfo (190ms)
+			ResolveRequiredComponents (48ms)
+	FinalizeReload (9557ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4364ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
+		SetupLoadedEditorAssemblies (8260ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (55ms)
 			SetLoadedEditorAssemblies (29ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (447ms)
-			ProcessInitializeOnLoadAttributes (2724ms)
-			ProcessInitializeOnLoadMethodAttributes (1080ms)
-			AfterProcessingInitializeOnLoad (34ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (1316ms)
+			ProcessInitializeOnLoadAttributes (5758ms)
+			ProcessInitializeOnLoadMethodAttributes (1040ms)
+			AfterProcessingInitializeOnLoad (58ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
-Refreshing native plugins compatible for Editor in 51.69 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.44 seconds
+Refreshing native plugins compatible for Editor in 28.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5037 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 112 unused Assets / (0.8 MB). Loaded Objects now: 5473.
-Memory consumption went from 193.5 MB to 192.7 MB.
-Total: 35.810300 ms (FindLiveObjects: 1.166400 ms CreateObjectMapping: 0.536400 ms MarkObjects: 28.379000 ms  DeleteObjects: 5.717400 ms)
+Memory consumption went from 193.5 MB to 192.8 MB.
+Total: 27.197500 ms (FindLiveObjects: 1.121700 ms CreateObjectMapping: 0.829100 ms MarkObjects: 24.079300 ms  DeleteObjects: 1.157800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -185,1513 +185,425 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 42208.367529 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5a672a7743e7214bb123ae0c62e188') in 1.005660 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 304
-========================================================================
-Received Import Request.
-  Time since last request: 3.048611 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9143c329212d6b7f9499389d7a61b6a5') in 0.328684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 304
-========================================================================
-Received Import Request.
-  Time since last request: 2.958791 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc84a672ccdfaed52538b9ab78ef4fb0') in 0.302872 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 304
-========================================================================
-Received Import Request.
-  Time since last request: 6.904551 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9a5ed1277ea1aaefc2255010df87a3') in 0.635237 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 304
-========================================================================
-Received Import Request.
-  Time since last request: 3.089004 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38d3b3066447660de2d8433e329cebe') in 0.352391 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 318
-========================================================================
-Received Import Request.
-  Time since last request: 109.738392 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf00abb9d8a04115e7741dee427e5e0a') in 0.566603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 1.989213 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a395db6a496450937d7994904ef796') in 0.336931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 2.375074 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa10d97dd1335fa0f74a1ba5bfca78e') in 0.297419 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 1.143763 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fbdaca4749a114a6a2523c9d8a57884') in 0.272034 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 3.025885 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311a131f04f557af5162181e70ed2386') in 0.260099 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 2.357503 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7186e546687c6ef7d456617adc48445e') in 0.378085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 0.981267 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4901d84637df59b9e8f268eb3cc701a') in 0.743748 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 326
-========================================================================
-Received Import Request.
-  Time since last request: 18.212449 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce13450368fa7ac0d2b3875f147c2b6b') in 0.353532 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 334
-========================================================================
-Received Import Request.
-  Time since last request: 7.754008 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54722a25dd73456e38a5c61e8c058d38') in 0.389331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 342
-========================================================================
-Received Import Request.
-  Time since last request: 17.182830 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89009e949f217f7b1814c3b0036a7fa') in 0.521433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 346
-========================================================================
-Received Import Request.
-  Time since last request: 4.489360 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b640a354e8060addfc65e06f6dc8d868') in 0.321614 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 356
-========================================================================
-Received Import Request.
-  Time since last request: 9.037205 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6442c141e750b5fc846712955ad594fe') in 0.395046 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 356
-========================================================================
-Received Import Request.
-  Time since last request: 8.159851 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559ed15872566b931ad1f5ef67a7d403') in 0.386426 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 2.184211 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a1d36518e99ecb7a39ccaa6ecf10935') in 0.362979 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 14.276830 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50f7099e9c6c3d6e388b605cfcff837') in 0.353469 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 0.513915 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98c26dbd5df4720bcec7f939d6240d4') in 0.434489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 2.851935 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e451979b3f8550566dee04565a85e84') in 0.420187 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 2.420920 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3c3656691cb78dfe6777710fbc0c0b') in 0.377653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 0.547565 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5e556062d1d05687d35b80fdcdbf8e') in 0.304793 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 1.295995 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19af950187675f31a3df098cfb1f7c8') in 0.427674 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 2.955584 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83c76d0a797f05dacdeecfdff5d2bba') in 0.390164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 1.882891 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05496143afda942c05e5e9346115ffc0') in 0.325233 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 0.877009 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f272cb427a40d1002c1c4ebb0fa215be') in 0.397203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 360
-========================================================================
-Received Import Request.
-  Time since last request: 3.979812 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f992a8fb8c0ce9ee9a1b53b83b94a03c') in 0.369797 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 20.247838 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bec05ecff1fb963f4a5e0e3a6f5b304') in 0.427290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 9.767292 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd250ae7104bef47a542720ffaeaffcc0') in 0.312953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 0.508551 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04e99736a20273233e9c44ddfd16fddf') in 0.386562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 1.010390 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02bf8419c0064dfa8d5ad2fca1562060') in 0.290930 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 1.940829 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb29b6ddf8c87e9fd2cab3731c859e0') in 0.343361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 1.063943 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7a8028aac8f9efeafa071a34addad7') in 0.391300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 4.066505 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7379e4e8583fb5b81acda612faf7cf16') in 0.309101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 0.845436 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2029f4b3a130946aa27abc029c7a36c') in 0.291573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 3.069540 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0ad410f4edb9eeed82df79a114c370') in 0.363112 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 362
-========================================================================
-Received Import Request.
-  Time since last request: 230.519356 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c3c0407e2cb4aa5305681cbf2bed6b') in 0.912121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023e542bb3d9aba06c748a9058f76b40') in 0.873359 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.072411 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac8d82fca57b746791e11eefe4c2068') in 0.005885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 9.348747 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b627b08a3f80ec21412604ef7eebfc') in 0.043265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 15.677333 seconds.
-  path: Assets/Map/Tilemap.prefab
-  artifactKey: Guid(703ecd16cb00ec043834f2a89b6ed59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Tilemap.prefab using Guid(703ecd16cb00ec043834f2a89b6ed59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b954f07014ef1111c3ee25970fd36f17') in 0.173513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9cb65ff1622ed2aa5cd2d560309ca07') in 0.452585 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 369
-========================================================================
-Received Import Request.
-  Time since last request: 4.559697 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25049c7b6ccdd9ff86f84794714a3cf6') in 0.113509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 74
-========================================================================
-Received Import Request.
-  Time since last request: 2.348072 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67ac6c53f187266e66133fffc320db6') in 0.114598 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 70
-========================================================================
-Received Import Request.
-  Time since last request: 13.343997 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1ceb5132b8124ad3d2ba6ecc9f30e2') in 0.126909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 76
-========================================================================
-Received Import Request.
-  Time since last request: 4.802634 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1dd72280386a97fef1d537a3dec3de') in 0.428208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 313
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517b28e62ca7fa91e1a8aa7f56079fd7') in 0.004659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 3.341279 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f892afbeb92aa836fad84d12f35ddd6') in 0.150779 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 64
-========================================================================
-Received Import Request.
-  Time since last request: 20.994848 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9e63b548ace3fe4ef85e01914b4290') in 0.110449 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 68
-========================================================================
-Received Import Request.
-  Time since last request: 3.457207 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981ba69aae3c4bae046cce465bc9340f') in 0.016605 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 2.657904 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061836d5a10b78f122602828a40825a2') in 0.073457 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 59
-========================================================================
-Received Import Request.
-  Time since last request: 9.581686 seconds.
-  path: Assets/SampleScene/LV2.unity
-  artifactKey: Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScene/LV2.unity using Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b7bab678f5eeeedc87a5341dab9e15') in 0.001965 seconds
+  Time since last request: 678.154773 seconds.
+  path: Assets/level/SampleScene.unity
+  artifactKey: Guid(7fa379b9e9143ac43abc2bd0c3cd30d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/level/SampleScene.unity using Guid(7fa379b9e9143ac43abc2bd0c3cd30d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e91e2cd74286cd714752af96d1ed739') in 0.005317 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 41.475156 seconds.
-  path: Assets/oak_woods_v1 1.0/character/9Sliced.png
-  artifactKey: Guid(4cfad42798bdfb44fbf43a954e435921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/character/9Sliced.png using Guid(4cfad42798bdfb44fbf43a954e435921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93dc677a17ba965ae3ea0aabc6237589') in 0.163296 seconds
+  Time since last request: 0.000079 seconds.
+  path: Assets/level/New Scene.unity
+  artifactKey: Guid(90938751d35b2514284997c5433afcb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/level/New Scene.unity using Guid(90938751d35b2514284997c5433afcb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4b2a916ccadaa2b9f79a6cf2f3d026') in 0.005693 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/ForestLevel 1/Background/Background1.png
-  artifactKey: Guid(ad75482eb1c190b46802048971b8bc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ForestLevel 1/Background/Background1.png using Guid(ad75482eb1c190b46802048971b8bc25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7d78b2e2fc5ad2745f9c11752aa0ee') in 0.075176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/oak_woods_v1 1.0/background/background_layer_1.png
-  artifactKey: Guid(1a68546d02159ae40acc5cf4b53765c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/background/background_layer_1.png using Guid(1a68546d02159ae40acc5cf4b53765c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a950ffa986dae4f960ee3fe60858e2b') in 0.153234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/ForestLevel 1/Background/Background2.png
-  artifactKey: Guid(0e95e25e226f72a468f635f5d0b48750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ForestLevel 1/Background/Background2.png using Guid(0e95e25e226f72a468f635f5d0b48750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f07db24c42c665e3adc0ba838601382f') in 0.079620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.143373 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/fence_1.png
-  artifactKey: Guid(38c1aa41538b1754caa71cc75837a2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/fence_1.png using Guid(38c1aa41538b1754caa71cc75837a2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77b7ddbb163a7c44f8f1a7ed34b0523') in 0.067088 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/grass_1.png
-  artifactKey: Guid(f7c0cb746a47277468991d660488b171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/grass_1.png using Guid(f7c0cb746a47277468991d660488b171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f377e0755d2145371ccfa4a154197808') in 0.091750 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/fence_2.png
-  artifactKey: Guid(afef94705371c5a47ae6bb3902c26603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/fence_2.png using Guid(afef94705371c5a47ae6bb3902c26603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b2fd91d22e3d060658847c31fc2f65') in 0.157399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/grass_2.png
-  artifactKey: Guid(e6398f49a1417e74399663bea2e4cd54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/grass_2.png using Guid(e6398f49a1417e74399663bea2e4cd54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6c64749716f4591591184eef99b46e') in 0.104478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.744908 seconds.
-  path: Assets/oak_woods_v1 1.0/oak_woods_tileset.png
-  artifactKey: Guid(45708111a50c0f24bb350b789b0e25b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/oak_woods_tileset.png using Guid(45708111a50c0f24bb350b789b0e25b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a787ba10776aad01365697434353bd81') in 3.577994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/ForestLevel 1/TileSet/Sprites 1.png
-  artifactKey: Guid(36ccf150e8d35e54da6cef2d59a269fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ForestLevel 1/TileSet/Sprites 1.png using Guid(36ccf150e8d35e54da6cef2d59a269fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f54a2e684cab190955a73cd1140b849') in 0.484681 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 51
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/shop.png
-  artifactKey: Guid(9fd7992e0dce6ef45a29a23bdf61b47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/shop.png using Guid(9fd7992e0dce6ef45a29a23bdf61b47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f531c57b6a4ac0547497fe3de9dec1') in 0.080782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/sign.png
-  artifactKey: Guid(26872460ca1c8c04795f4f8927f765ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/sign.png using Guid(26872460ca1c8c04795f4f8927f765ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b695ccd65c9ca50c8655c33202b0838') in 0.083890 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/oak_woods_v1 1.0/decorations/shop_anim.png
-  artifactKey: Guid(4b7f9c80936ad874991b18fc4583ad6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/oak_woods_v1 1.0/decorations/shop_anim.png using Guid(4b7f9c80936ad874991b18fc4583ad6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090873a8f7566c8575cef627988fc64e') in 0.084901 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/ForestLevel/TileSet/Sprites.png
-  artifactKey: Guid(e3c8d524b2a667b468892c9fe33d1861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ForestLevel/TileSet/Sprites.png using Guid(e3c8d524b2a667b468892c9fe33d1861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63d9f5eddd588b1b691845b3d85bc1b') in 0.245390 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/ForestLevel 1/TileSet/Sprites.png
-  artifactKey: Guid(9e940aeeb7327554989cbe468f4ca061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ForestLevel 1/TileSet/Sprites.png using Guid(9e940aeeb7327554989cbe468f4ca061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e0244b1cbd75adad5c026b3d6fbf42') in 0.222306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 62.796587 seconds.
+  Time since last request: 26.750801 seconds.
   path: Assets/SampleScene/LV1scene.unity
   artifactKey: Guid(a2c9f9b273308cc42be6902553252599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScene/LV1scene.unity using Guid(a2c9f9b273308cc42be6902553252599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3a33fd4a5361f80217af42deae3f2a') in 0.001704 seconds
+Start importing Assets/SampleScene/LV1scene.unity using Guid(a2c9f9b273308cc42be6902553252599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebdeea179706cb23b1b900a8bd07767') in 0.006162 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 38.478488 seconds.
-  path: Assets/Map/Tilemap.prefab
-  artifactKey: Guid(703ecd16cb00ec043834f2a89b6ed59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Tilemap.prefab using Guid(703ecd16cb00ec043834f2a89b6ed59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d5ba94caa013233b06b75cebb6295a') in 0.208896 seconds
+  Time since last request: 2.797065 seconds.
+  path: Assets/SampleScene/LV2.unity
+  artifactKey: Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SampleScene/LV2.unity using Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e34a0e6a71e521069b7ab86113578e') in 0.003786 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 56
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.471616 seconds.
+  path: Assets/SampleScene/LV2.unity
+  artifactKey: Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SampleScene/LV2.unity using Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4410204b646c2fd3f4d32f2d3be91bf') in 0.001972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.422152 seconds.
+  path: Assets/SampleScene
+  artifactKey: Guid(074511012179a574e84c390ef9ed1139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SampleScene using Guid(074511012179a574e84c390ef9ed1139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c394a12eb94765dc96bc40c3165c4404') in 0.001258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 30.352786 seconds.
+  path: Assets/level/LV2scene.unity
+  artifactKey: Guid(7fa379b9e9143ac43abc2bd0c3cd30d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/level/LV2scene.unity using Guid(7fa379b9e9143ac43abc2bd0c3cd30d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8137ed8925d44062b6acc771bb73b68d') in 0.002787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 47.851601 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background
+  artifactKey: Guid(e2c5ef056991e3c4b902833ce4b5c2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background using Guid(e2c5ef056991e3c4b902833ce4b5c2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27fd334f61dea6a7f153613561f66a70') in 0.002032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.279096 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Main Characters
+  artifactKey: Guid(c674b6697fb2a834d9379dc2411ddde1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Main Characters using Guid(c674b6697fb2a834d9379dc2411ddde1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c6553b684c9186883e580ae377abcd') in 0.004038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.119165 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Main Characters/Appearing (96x96).png
+  artifactKey: Guid(3421078018dc3934a8c1ab3b7bf89aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Main Characters/Appearing (96x96).png using Guid(3421078018dc3934a8c1ab3b7bf89aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9437e2a3c73aeda29fee3da73ab0f4') in 0.684136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Main Characters/Desappearing (96x96).png
+  artifactKey: Guid(99e1beacf34e67c42afd2d344aefcc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Main Characters/Desappearing (96x96).png using Guid(99e1beacf34e67c42afd2d344aefcc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46c1189fb24a7c707868787dc3d08c5') in 0.294165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.487027 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Other
+  artifactKey: Guid(9b265bbeade4a16468dc117cf3b94dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Other using Guid(9b265bbeade4a16468dc117cf3b94dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118a3dbe66c261f61083b55c293edd7c') in 0.002270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.013604 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Other/Confetti (16x16).png
+  artifactKey: Guid(84e73c5fcbc3d324a9bebf3715abc565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Other/Confetti (16x16).png using Guid(84e73c5fcbc3d324a9bebf3715abc565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f55c1c7cbe78a9fd45c991d9c47896f') in 0.149789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Other/Dust Particle.png
+  artifactKey: Guid(e7980a08b8e9f3c4bbe56762604cba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Other/Dust Particle.png using Guid(e7980a08b8e9f3c4bbe56762604cba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab52f87d6291bbeb7b660a62fccb208') in 0.147710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000083 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2ea643124dcf36eaed0914d6f142c3') in 0.155139 seconds
+  path: Assets/Pixel Adventure 1/Assets/Other/Shadow.png
+  artifactKey: Guid(38ea9af89efd60b4ab324ed5b168cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Other/Shadow.png using Guid(38ea9af89efd60b4ab324ed5b168cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edc1975fca7e605922220ff13bd2cda') in 0.105956 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Other/Transition.png
+  artifactKey: Guid(af34cad9a50a94c42b0907fd58d6f99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Other/Transition.png using Guid(af34cad9a50a94c42b0907fd58d6f99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fa0f616149d8c6b258c7dd46e8d1e3') in 0.087966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.011133 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Blue.png
+  artifactKey: Guid(8049ea91a9d5fca4dab4024c0915dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Blue.png using Guid(8049ea91a9d5fca4dab4024c0915dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a1e7c74b587c0535222a7616531eeb0') in 0.117781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002495 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Gray.png
+  artifactKey: Guid(ffc80c129c9aca14c9fb4dbeba0e10d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Gray.png using Guid(ffc80c129c9aca14c9fb4dbeba0e10d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3afacdc11566a2483e4b31e7116d6b') in 0.098444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Green.png
+  artifactKey: Guid(2538710101d0f1f4e8976b3495cd1f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Green.png using Guid(2538710101d0f1f4e8976b3495cd1f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4c04273addf626ebd575763e61382f') in 0.101904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Yellow.png
+  artifactKey: Guid(4d8c75a4d7dd2a0489270e1058d82128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Yellow.png using Guid(4d8c75a4d7dd2a0489270e1058d82128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8613275dc9c88158b8f53e70199267a') in 0.090294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000736 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Pink.png
+  artifactKey: Guid(348c3b734b11d3b4aa5c69e25b7113e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Pink.png using Guid(348c3b734b11d3b4aa5c69e25b7113e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d5b42758b44e0cea937489ef747059') in 0.098943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001025 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Brown.png
+  artifactKey: Guid(ca6a66f8e2ae9c24c8c6b39c49206a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Brown.png using Guid(ca6a66f8e2ae9c24c8c6b39c49206a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b7b199cb8b7678c2fae595d084036f') in 0.145415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Background/Purple.png
+  artifactKey: Guid(248611cc7bb8d85448933cee393ce41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Background/Purple.png using Guid(248611cc7bb8d85448933cee393ce41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3dbe2b759de79e7bc1dbc672645b4d3') in 0.109901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.736929 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_0.asset
+  artifactKey: Guid(f92633e5b4b22204d86715524c94a713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_0.asset using Guid(f92633e5b4b22204d86715524c94a713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c38a4f1aefe5df41612f379b87ceb9') in 0.108594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_8.asset
+  artifactKey: Guid(c49f10613f6631f4a9e37f3bc8983e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_8.asset using Guid(c49f10613f6631f4a9e37f3bc8983e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9395f4fdfdaa24b59f86f62bf4b1beaa') in 0.038514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_13.asset
+  artifactKey: Guid(c4297dc96e9bb7c409c45f0f89489394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_13.asset using Guid(c4297dc96e9bb7c409c45f0f89489394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1425311a3a3de594e2431fd34d7b04b') in 0.032734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_14.asset
+  artifactKey: Guid(db766a0b4f1d26149ab11d174a19b707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_14.asset using Guid(db766a0b4f1d26149ab11d174a19b707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e321214efce36842cf9e62c912debe') in 0.064835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_7.asset
+  artifactKey: Guid(adeb4d3371e1704438237a1a7c0c0ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_7.asset using Guid(adeb4d3371e1704438237a1a7c0c0ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2572f7f72b6e1836ebc9e332c20d823a') in 0.034281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_5.asset
+  artifactKey: Guid(28dec41fb97db3a4cb0af37bfa1ab254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_5.asset using Guid(28dec41fb97db3a4cb0af37bfa1ab254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c88e6e204ec24d3cc2aa84d41501e8') in 0.046247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_6.asset
+  artifactKey: Guid(7ba60902cad763446893babc3bde27ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_6.asset using Guid(7ba60902cad763446893babc3bde27ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0aa6ec54750c26767334377190ee4b') in 0.060884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_11.asset
+  artifactKey: Guid(c88aeee3137dec04b9f2b1fc9f06d38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_11.asset using Guid(c88aeee3137dec04b9f2b1fc9f06d38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0329bf9c86561248cfe547e7bd4ae01a') in 0.036535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_9.asset
+  artifactKey: Guid(5f0f8ad0b43bda44abe487e6ec26b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_9.asset using Guid(5f0f8ad0b43bda44abe487e6ec26b032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366529b877d79c047dee3b08f24a7f11') in 0.027697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_4.asset
+  artifactKey: Guid(b5125d8c6e4e7154caa104b7bdd9f893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_4.asset using Guid(b5125d8c6e4e7154caa104b7bdd9f893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77ed8507b081bab4afc45a6b99d0b0e') in 0.064092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000062 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a746a23ad49d4a6682152b6a0dec0c') in 0.452265 seconds
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_3.asset
+  artifactKey: Guid(1374049c02c100a468f44bf62f90702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_3.asset using Guid(1374049c02c100a468f44bf62f90702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a45238ec5b7711bf5d65cc0e64e522') in 0.068445 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 20.087480 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a67f7f596edf98f3c7a38f5936d6652') in 0.392412 seconds
+  Time since last request: 0.000083 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_1.asset
+  artifactKey: Guid(9de40eab4a1e4ba4b86e4d007404a06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_1.asset using Guid(9de40eab4a1e4ba4b86e4d007404a06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8acebd6a2e324ff030c2bfa50c05c0b1') in 0.041894 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 9.442678 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e490119b418d1d87fb1f4029ff35c638') in 0.397318 seconds
+  Time since last request: 0.000037 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_12.asset
+  artifactKey: Guid(ae656c2970cac4843b7adf4c888b0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_12.asset using Guid(ae656c2970cac4843b7adf4c888b0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afaede58a565e828b33241c5c340def') in 0.050679 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 2.850147 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5220e6386473c70110a695a3d27e816b') in 0.489283 seconds
+  Time since last request: 0.000080 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_2.asset
+  artifactKey: Guid(6d6db0bc9e2218440aed4d9160f1ab0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_2.asset using Guid(6d6db0bc9e2218440aed4d9160f1ab0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddeee848633f5087a6b895a84c19faf5') in 0.050089 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 8.841956 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1434f71a62b10b35c2c3807159248055') in 0.337436 seconds
+  Time since last request: 0.000107 seconds.
+  path: Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_10.asset
+  artifactKey: Guid(14e0d14cf469cde4e981c8a8a5698b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Tilemap/Sprites_10.asset using Guid(14e0d14cf469cde4e981c8a8a5698b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855471c259d575eabe0957b8350f4311') in 0.048220 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 3.042635 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328a352e81d98de3504eb05e324e9931') in 0.315312 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 5.752022 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c43b5480a28426133d7c39e5478e12') in 0.333852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 3.814328 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90b5f06b0f8590e824fbfdb3770f0a9') in 0.422064 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 8.431491 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4bc2650e5a37279bff02ec61652a90') in 0.466182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 3.142268 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e161aa745c8bcf433b44989391660d21') in 0.454198 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 5.562963 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81db1f5bd852ab0982e6af07286f550f') in 0.346903 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 4.366207 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0841ac97e4d4887f0e6b44c5382d5f6a') in 0.457142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 7.419291 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0306e3886b9fc80f85885bd77915f5') in 0.456387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 14.527999 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27282863925bfaf98d24ee9ae90a96b') in 0.270241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 5.331806 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd971decae847ba36cf3b9b54074d639') in 0.265879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 2.864413 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47f51d5f355dfa49df396a49d52ffc4') in 0.287846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 39.898490 seconds.
-  path: Assets/SampleScene/LV1scene.unity
-  artifactKey: Guid(a2c9f9b273308cc42be6902553252599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScene/LV1scene.unity using Guid(a2c9f9b273308cc42be6902553252599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ec06ebbdb8b0641d80b3b850929554') in 0.002868 seconds
+  Time since last request: 27.956976 seconds.
+  path: Assets/2D_tilemap
+  artifactKey: Guid(a39cf8002df4206458df300f6ce63d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D_tilemap using Guid(a39cf8002df4206458df300f6ce63d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3e2cd795083cb31130e0cade3ba521') in 0.001236 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 126.147408 seconds.
-  path: Assets/Map/Prefab/Grid.prefab
-  artifactKey: Guid(a4595d948f3754d4fa37eafeb1e1a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Prefab/Grid.prefab using Guid(a4595d948f3754d4fa37eafeb1e1a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4483794e795f635b04cfba4c12a46eec') in 0.197248 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 19.585404 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e02367c6934056b6f9c0a42a4c947c') in 0.340477 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 6.040175 seconds.
-  path: Assets/Map/Grid.prefab
-  artifactKey: Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid.prefab using Guid(3a06699b0c0f0b14ba6a6a6e41f7b299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306d0ceb455510d5018f8f1ce7cd7748') in 0.380888 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 365
-========================================================================
-Received Import Request.
-  Time since last request: 19.855604 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1ec29d00eb24fb1138e161991ee83e') in 0.111604 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 70
-========================================================================
-Received Import Request.
-  Time since last request: 3.936059 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5ed3002938df6dabef52cd84560b32') in 0.139277 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 24.129004 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd024f4be0fbd45556d997ebdace4b629') in 0.268332 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.109477 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637fab3d14e646722983e58fa2cde716') in 0.173437 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.706588 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26d80489176dce09308bb3b7f4cca06') in 0.183006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.141174 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e1ce07ea2ebdcd524ead6150075c24') in 0.151959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.887941 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd535348d2a49ab934d3469d93c67c3d7') in 0.201439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.332914 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9a520ff22540a207f3f0978b0dda4b') in 0.172352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 3.178057 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2341680ec0d1dfc596dd5885b6102c') in 0.197692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 6.065290 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c582d3ab74e9b8719afe38821a2360c9') in 0.232606 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 8.952910 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffd471cda0b8a29e2402597be4a8a1d') in 0.186400 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 3.760603 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1312b93ae7aea3e84114d771dd7c62e0') in 0.563114 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 16.297700 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a07483dec0473c0dd6b491abdc43601') in 0.213763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 2.109904 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec537325b2f0a1a64254618afe8f694e') in 0.181990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.593073 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef7fddeb9cfcc0028fd8a5be55af73a') in 0.175530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.815608 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd82ed3b11b17a19248d86f22023eb6b') in 0.203179 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 1.598643 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3784ba1917c2a5a9acae533484bff00') in 0.187472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 75
-========================================================================
-Received Import Request.
-  Time since last request: 36.052971 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd85b9b3d1cfbeccfa4d37960e66ca1') in 0.204704 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 3.171449 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7670affdf9a23ad5f268993fe643e0b6') in 0.173834 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 9.589431 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534ac4c2a6e87eaa9de08424190e3fbc') in 0.189434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 2.839586 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6cabbeb585d806e5a86b8751cbe3368') in 0.171319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 5.486488 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b33c776885f48163779e1696b2907a') in 0.199470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 3.676556 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4138fce822744569252ec0762af20a') in 0.176464 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 3.305397 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af19b17bd063cca62d3ea3fef0ea5706') in 0.164597 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 3.876581 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e87f7942e98a3723fe7d91475a6b338') in 0.180542 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 2.117551 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ecf655365f4e7c6681e9be805498888') in 0.159078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 77
-========================================================================
-Received Import Request.
-  Time since last request: 5.370800 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055fd6c8e8ea0b965376f59ce4f6efdb') in 0.189789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 2.994402 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75357f14151a2a8c38fbf87b5d7a9ece') in 0.156850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 1.903057 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64da4d8003b797b1302be3a601df7bd0') in 0.166933 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 1.705955 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2ec6b0c8ff2d15e1e0b41c611d75a6') in 0.209044 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 3.260868 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899b3e0bba926d64d9e9478e8e6da5c2') in 0.201847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.729742 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45047c76186e26a178642c2481345ac4') in 0.164257 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.834737 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0202aba6e4e28e4e9761bc1b94b75062') in 0.192849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.785739 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c27f4a9054f25d308465558108eb47f') in 0.199166 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 4.546558 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dc72097db8ad1203e527e37ed77834') in 0.163968 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.794320 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a899627634e565050d35600da32c79f9') in 0.197044 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.986921 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76fcee9493c747acc9c6aa3fc74db3b') in 0.171225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.703260 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc84cc62161d1691981cbb75b437eb9') in 0.193544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.725466 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f599e990bf10c736754ac9b6a3343a84') in 0.184298 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 5.778269 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cab4ea04f64b3b346b01c9302167ec') in 0.190808 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 5.847452 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13925e98e54b549ab4276918092192c6') in 0.193004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 3.501232 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e58c8074440bfc81330712886111d0') in 0.186953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.703471 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0417e713fbbf78956d1963edfbc7c6') in 0.170063 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 5.578460 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a1ab944f13c497d136ddb4a2f2d641') in 0.178317 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 4.069289 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7591aae7f293079c2173a96f4d7313') in 0.205451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 2.619665 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845a66ff854606958c3e221af3111491') in 0.152807 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.829449 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128f5cc9ec2b32813b1373263ffe1587') in 0.178839 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 15.309194 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bca6c3d8d1e13a6684865bc942cc67') in 0.204645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.934184 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f19be108e475d2454119c587a5190e3') in 0.163375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.517291 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28e16cece14f494e4d0eea3010a1894') in 0.196244 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.556598 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8fb34a5e7c71c305fc4deaf8827685') in 0.199909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 1.956897 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84747242431e5dc1ec9bd424b0d1f8f9') in 0.196316 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 81
-========================================================================
-Received Import Request.
-  Time since last request: 55.457143 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a36dbfa44c491966769eac8e44d0d55') in 0.165151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 5.731434 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce2edd16fc9c022fd4fac1836c23456') in 0.184475 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 2.655501 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2e8c6772cd653c310a0f89cef07cef') in 0.151256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 3.411695 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fe803359171993833b4d80f0df1e73') in 0.172006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 5.697469 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b1592c63389e4ab776e26794b73e9a') in 0.186868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 6.956956 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4cb8f233a36d6eb925908a473a380ab') in 0.306544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 2.526270 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064b1ac459706b68e602228f5a3a40f5') in 0.137156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 3.351413 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd4eda190a70bf62aef0c01c860360f') in 0.193963 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 1.628425 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c19b8cbfb11c7c8db40e24c64edc77') in 0.163472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 10.469094 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4cceba0965f951557f477aaea453bf') in 0.236742 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 7.464294 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35af056ef2aaba04a4c2868bfda29ce2') in 0.211756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 6.802451 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c622144b6adc0cf4b0909825966858b9') in 0.173637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 83
-========================================================================
-Received Import Request.
-  Time since last request: 2.918572 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05ac57c2b11eb341b3b528556859c65') in 0.163413 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 85
-========================================================================
-Received Import Request.
-  Time since last request: 6.289880 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241c809dbb70ac3d1fe38fa6ee1b8ebb') in 0.178224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 87
-========================================================================
-Received Import Request.
-  Time since last request: 1.842237 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5427b61b36724c39389c1ead1dec4454') in 0.188486 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 87
-========================================================================
-Received Import Request.
-  Time since last request: 3.518685 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac63bc53a71b7236df618531c5bdc337') in 0.199248 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 89
-========================================================================
-Received Import Request.
-  Time since last request: 1.947836 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9d81d65693178bfcc46584939a272b') in 0.202940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 89
-========================================================================
-Received Import Request.
-  Time since last request: 13.760885 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87f7c8a6a8940a324e9add7ab3a00a4') in 0.155283 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 89
-========================================================================
-Received Import Request.
-  Time since last request: 4.719426 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e90f50a73027e699091f58b4dc8272') in 0.181787 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 91
-========================================================================
-Received Import Request.
-  Time since last request: 5.117399 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa65efe837386fd04813f4f8bf076ff') in 0.255418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 91
-========================================================================
-Received Import Request.
-  Time since last request: 4.365437 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc66b15621dbf1cbeca02b2213e47f5') in 0.191994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 7.570869 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c477c518ea857576146d02336b585ad6') in 0.213640 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.802869 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8460641577ee901abff068015f856af') in 0.222628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.332418 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14095070a9083574c646a38079b710d') in 0.198904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 2.947884 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06032b6de67054e6abd34778dcc47144') in 0.191946 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 23.577023 seconds.
-  path: Assets/SampleScene/LV2.unity
-  artifactKey: Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScene/LV2.unity using Guid(70f754179525e9447a67a31b732d22b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b53e79e1c7fc7ba0cb692e2d3959ea') in 0.001697 seconds
+  Time since last request: 1.959609 seconds.
+  path: Assets/oak_woods_v1 1.0
+  artifactKey: Guid(db4bc80257bfeb042be8b96214726566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0 using Guid(db4bc80257bfeb042be8b96214726566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0aefba6fc74502410be3d7f2faf6d84') in 0.001643 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 31.473054 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbcfa5d5c07b8642746c8ec6fe8c77ef') in 0.152915 seconds
+  Time since last request: 1.980308 seconds.
+  path: Assets/oak_woods_v1 1.0/background
+  artifactKey: Guid(846c86d80d4834947b0b597bd5ad5d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/background using Guid(846c86d80d4834947b0b597bd5ad5d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b1e3dc6fdcfd578a668d456c2711a06') in 0.001389 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 6.182580 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0823503f6d0c15181f048eb97cbf9fa2') in 0.154163 seconds
+  Time since last request: 1.976187 seconds.
+  path: Assets/oak_woods_v1 1.0/character
+  artifactKey: Guid(9c37fd5f6f624db4da3edc25fb25a258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/character using Guid(9c37fd5f6f624db4da3edc25fb25a258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc8611eb98d6e5a5b519fb656ed5a96') in 0.001293 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.774116 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc864a110dbf953d6ff0b43c95c2b53') in 0.180483 seconds
+  Time since last request: 0.068001 seconds.
+  path: Assets/oak_woods_v1 1.0/character/New Sprite Atlas.spriteatlasv2
+  artifactKey: Guid(41bafc3d5eccc234ea2849bed165bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/character/New Sprite Atlas.spriteatlasv2 using Guid(41bafc3d5eccc234ea2849bed165bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17148e336045152f16d506f0b88fab77') in 0.004818 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3.937040 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b7fde99ca868cc32c086c83bfaa96c') in 0.167574 seconds
+  Time since last request: 0.000056 seconds.
+  path: Assets/oak_woods_v1 1.0/character/New Sprite Library Asset.spriteLib
+  artifactKey: Guid(cb315cfdc5bfa27428e4fd25f0554b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/character/New Sprite Library Asset.spriteLib using Guid(cb315cfdc5bfa27428e4fd25f0554b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a6e644610a2e1b65a52cfb5137de78') in 0.009333 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3.404625 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e393ea838a9b34a690e6a215c25a2e0') in 0.182958 seconds
+  Time since last request: 7.228577 seconds.
+  path: Assets/background_layer_1 1.png
+  artifactKey: Guid(1a68546d02159ae40acc5cf4b53765c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/background_layer_1 1.png using Guid(1a68546d02159ae40acc5cf4b53765c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6badd9a084b48b4086b85a966734954') in 0.062518 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 7.181557 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96993d4dacba5a88e41e8a5a3ba1b9c3') in 0.171549 seconds
+  Time since last request: 7.712029 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations
+  artifactKey: Guid(60ecb0e26ef2c984db00f8fa5a37c155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations using Guid(60ecb0e26ef2c984db00f8fa5a37c155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ecce7144fef97a76dcf9c6a065d7d4') in 0.019806 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.769187 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ce07f0dbbd25370dece8cdc475b6dd') in 0.184298 seconds
+  Time since last request: 0.000152 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations/grass_3.png
+  artifactKey: Guid(e6637ce4c9b3bd447a9f450cb43bb772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations/grass_3.png using Guid(e6637ce4c9b3bd447a9f450cb43bb772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf093044921a712ebddc6e343b0bcaff') in 0.594390 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 3.250217 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ac4d87edd1c5b5c81bc7c088308710') in 0.159293 seconds
+  Time since last request: 0.000246 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations/lamp.png
+  artifactKey: Guid(68d66a2506ad2834e840dbcb86aadcf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations/lamp.png using Guid(68d66a2506ad2834e840dbcb86aadcf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322c46e0d650eef6b515fd179506c3f3') in 0.185009 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 2.915197 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c32b2c0997761071cfa9862e687230') in 0.178544 seconds
+  Time since last request: 0.000277 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations/rock_1.png
+  artifactKey: Guid(b9319ab77d9590749a7e4701108c50bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations/rock_1.png using Guid(b9319ab77d9590749a7e4701108c50bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4164100d2313bf51783c24cf5546cf') in 0.192614 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 12.370557 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907bfb9d24c9107ff172d0b14306b0f9') in 0.213625 seconds
+  Time since last request: 0.000673 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations/rock_3.png
+  artifactKey: Guid(9e7d863e017893f4e8ebceb743b04bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations/rock_3.png using Guid(9e7d863e017893f4e8ebceb743b04bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3f2875e73f67dae28f6bd95c4fb3ba') in 0.363116 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 5.734861 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbd07e4cb9f4bea923711fcd77807c8') in 0.179743 seconds
+  Time since last request: 0.000072 seconds.
+  path: Assets/oak_woods_v1 1.0/decorations/rock_2.png
+  artifactKey: Guid(3e8df2db5f305a642a03c96c5a506650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/oak_woods_v1 1.0/decorations/rock_2.png using Guid(3e8df2db5f305a642a03c96c5a506650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed10c6118628f98aff3835c3beefa0c4') in 0.162528 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 2.439761 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142d96accbd09ca7ea98bba953b6b77c') in 0.157065 seconds
+  Time since last request: 91.860484 seconds.
+  path: Assets/ForestLevel/TileSet
+  artifactKey: Guid(ef6190ddfa6fcf24db2d92d959feed7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForestLevel/TileSet using Guid(ef6190ddfa6fcf24db2d92d959feed7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaef91a4dea1b45d1d31ea16467f83cc') in 0.003584 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 17.528258 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad8c64c7a70f710595a223ae35dc3e0') in 0.163027 seconds
+  Time since last request: 88.172117 seconds.
+  path: Assets/Map/Spike Head/Bottom Hit (54x52).png
+  artifactKey: Guid(d2223d6a7816d474b83187392732daf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map/Spike Head/Bottom Hit (54x52).png using Guid(d2223d6a7816d474b83187392732daf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c3ed06a690f522e65a3bbb76cc7bf6') in 0.160911 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 6.058426 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e1c776565d65d3f0503155b5666afb') in 0.169003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 4.400968 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846711d0c54d5b1527723be4176245dd') in 0.164119 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 3.833854 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9e24956e76ff1442354c7d82572b1e') in 0.174466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 5.605662 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958f8565e010b5c22036c30cf7fe9781') in 0.178973 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 4.129526 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8ab1bff96ddd82da274b00166dce90') in 0.363191 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 95
-========================================================================
-Received Import Request.
-  Time since last request: 37.831089 seconds.
-  path: Assets/Map/Grid2.prefab
-  artifactKey: Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map/Grid2.prefab using Guid(6f914936f0d6858479a21b4c64794ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd51b3b398be307fae0b93f80cfc5cc') in 0.161289 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
+Number of asset objects unloaded after import = 6
