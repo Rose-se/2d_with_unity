@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movingbrigde : MonoBehaviour
+public class Movingbrigde : MonoBehaviour //Name of object
 {
     // Start is called before the first frame update
     void Start()
