@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -175,7 +175,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.00000006601158}
-  m_ConnectedAnchor: {x: 1.2530022, y: 0.084400535}
+  m_ConnectedAnchor: {x: 1.2529995, y: 0.084400535}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -359,7 +359,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.000000016339271}
-  m_ConnectedAnchor: {x: 1.0837326, y: 0.25225216}
+  m_ConnectedAnchor: {x: 1.0837333, y: 0.2522525}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -543,7 +543,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: 0.000000134944}
-  m_ConnectedAnchor: {x: 1.2517357, y: -0.043687157}
+  m_ConnectedAnchor: {x: 1.2517319, y: -0.04368681}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -727,7 +727,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: 0.000000134944}
-  m_ConnectedAnchor: {x: 0.9982643, y: 0.1333138}
+  m_ConnectedAnchor: {x: 0.9982664, y: 0.1333138}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -812,7 +812,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.28627452, g: 0.60784316, b: 0.17254902, a: 1}
+  m_Color: {r: 0.06666667, g: 0.03529412, b: 0.10980393, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -949,7 +949,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1069,7 +1069,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.000000056364286}
-  m_ConnectedAnchor: {x: 0.6040001, y: -0.23009679}
+  m_ConnectedAnchor: {x: 0.60400003, y: -0.23009606}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1253,7 +1253,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.000000016339271}
-  m_ConnectedAnchor: {x: 1.275734, y: 0.06221273}
+  m_ConnectedAnchor: {x: 1.2757334, y: 0.06221273}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1317,7 +1317,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1437,7 +1437,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.00000014740988}
-  m_ConnectedAnchor: {x: 1.2260017, y: -0.122718096}
+  m_ConnectedAnchor: {x: 1.2259994, y: -0.122719556}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1501,7 +1501,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1621,7 +1621,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.00000014740988}
-  m_ConnectedAnchor: {x: 0.9699974, y: -0.15071575}
+  m_ConnectedAnchor: {x: 0.9700009, y: -0.15071504}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1805,7 +1805,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.000000016339271}
-  m_ConnectedAnchor: {x: 1.0542679, y: 0.11365214}
+  m_ConnectedAnchor: {x: 1.0542684, y: 0.11365181}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1869,7 +1869,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1989,7 +1989,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: -0.000003847632}
-  m_ConnectedAnchor: {x: -0.070999146, y: -0.5607001}
+  m_ConnectedAnchor: {x: -0.07100018, y: -0.5607006}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2173,7 +2173,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: 0.00000017423417}
-  m_ConnectedAnchor: {x: 0.94226456, y: -0.024755675}
+  m_ConnectedAnchor: {x: 0.9422669, y: -0.024756368}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2211,7 +2211,7 @@ Transform:
   m_GameObject: {fileID: 8672019305753404558}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.102268, y: -0.8057, z: -0.0031375885}
+  m_LocalPosition: {x: 4.102268, y: -0.8057, z: -0.07}
   m_LocalScale: {x: 1, y: 0.5242, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2259,7 +2259,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.18431373, g: 0.5411765, b: 0.14901961, a: 1}
+  m_Color: {r: 0.06666667, g: 0.03529412, b: 0.10980393, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2357,7 +2357,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.776268, y: 0.30395016}
+  m_ConnectedAnchor: {x: 0.77626747, y: 0.3039505}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2421,7 +2421,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2541,7 +2541,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: 0.00000017423417}
-  m_ConnectedAnchor: {x: 1.3077354, y: -0.088922046}
+  m_ConnectedAnchor: {x: 1.3077339, y: -0.088922404}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2605,7 +2605,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0426c7e478d81a04a8fb5be49a32a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2725,7 +2725,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: -0.00000006601158}
-  m_ConnectedAnchor: {x: 0.87926483, y: 0.088922404}
+  m_ConnectedAnchor: {x: 0.87926555, y: 0.088922404}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2760,7 +2760,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -58.562267, y: -2.54, z: -8.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.015, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2658767509545207575}
