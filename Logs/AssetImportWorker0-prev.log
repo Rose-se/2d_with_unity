@@ -1155,3 +1155,19 @@ Received Import Request.
 Start importing Assets/Materials/Ocean_material_05 1.mat using Guid(3b4c88b163384f9408b87ef8eb9da715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fca4d3a92c5e88de51bd90262beb6a') in 0.012880 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 5360.104412 seconds.
+  path: Assets/Materials/Ocean_material_03.mat
+  artifactKey: Guid(8d3bf20d9e62f424ba7828f6e852d6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ocean_material_03.mat using Guid(8d3bf20d9e62f424ba7828f6e852d6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c078af71121313708f30ab4f641b27d') in 0.080620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 17.608145 seconds.
+  path: Assets/Materials/Unlit Stylized materials manual.pdf
+  artifactKey: Guid(8b62e707f1998064f9fd5c5a777c7e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Unlit Stylized materials manual.pdf using Guid(8b62e707f1998064f9fd5c5a777c7e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f30fa1bd8b84ef792bf80b9dd8f916a') in 0.002534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
