@@ -1,0 +1,2 @@
+Patterns are concept of solution to common problems in software design
+is a premade blueprint for create and solving a particular problem
