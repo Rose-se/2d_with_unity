@@ -65,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Movingbrigde.cs" />
-    <Compile Include="Assets\Script\Singletons.cs" />
     <Compile Include="Assets\Script\Updraf.cs" />
   </ItemGroup>
   <ItemGroup>
