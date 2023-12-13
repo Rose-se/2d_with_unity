@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     private Rigidbody2D rb;
     //public float offset;
     private void Start()
@@ -15,10 +14,10 @@ public class Player : MonoBehaviour
     private void Update()
     {   
         float dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * 7f,rb.velocity.y);
+        rb.velocity = new Vector2(dirX * 5f,rb.velocity.y);
         if(Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector3(rb.velocity.x ,16f);
+            rb.velocity = new Vector3(rb.velocity.x ,15f);
         }
     }
     public class anim_update

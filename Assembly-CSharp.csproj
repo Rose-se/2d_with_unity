@@ -65,11 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Movingbrigde.cs" />
-    <Compile Include="Assets\Script\Singletons.cs" />
-    <Compile Include="Assets\Script\Flameball.cs" />
+    <Compile Include="Assets\Script\Camera_follow.cs" />
     <Compile Include="Assets\Script\Updraf.cs" />
+    <Compile Include="Assets\Script\PlayerAttack.cs" />
     <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\Flameshort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\Water_Ocean_01.shader" />
@@ -937,6 +936,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
       <Private>False</Private>
@@ -1195,6 +1198,10 @@
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
