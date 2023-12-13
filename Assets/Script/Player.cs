@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     }
     public class anim_update
     {
-        
+
     }
 
     public class attack
