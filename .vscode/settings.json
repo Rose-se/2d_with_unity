@@ -53,6 +53,14 @@
     },
     "dotnet.defaultSolution": "2d_with_unity.sln",
     "cSpell.words": [
-        "Dont"
+        "Dont",
+        "Flameshort",
+        "Gamemanager",
+        "Onspwan",
+        "Playerlife",
+        "Playermovement",
+        "Slerp",
+        "spawnpoint",
+        "yoffset"
     ]
 }
