@@ -5,3 +5,34 @@ Logs
 
 
 .fake
+*.json
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+UserSettings/Layouts/default-2022.dwlt
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+UserSettings/Layouts/default-2022.dwlt
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+UserSettings/Layouts/default-2022.dwlt
+*.dwlt
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+*.dwlt
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+UserSettings/Layouts/default-2022.dwlt
+.vscode/extensions.json
+*.json
+UserSettings/Layouts/default-2022.dwlt
+UserSettings/Layouts/default-2022.dwlt
+UserSettings/Layouts/default-2022.dwlt
+*.dwlt
+*.dwlt
+.vscode/extensions.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+UserSettings/Layouts/default-2022.dwlt
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+.vscode/launch.json
+Assets/Script/PlayerAttack.cs.meta

@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mob
   layers:
   - Default
   - TransparentFX
@@ -11,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - mid background
-  - background
-  - terrain
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -38,21 +39,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: background
-    uniqueID: 2115472033
+  - name: BG
+    uniqueID: 1639684579
     locked: 0
-  - name: mid background
-    uniqueID: 1371584233
+  - name: Mid BG
+    uniqueID: 4190367909
     locked: 0
-  - name: tile background
-    uniqueID: 3228458103
-    locked: 0
-  - name: tile terrain
-    uniqueID: 1085047005
-    locked: 0
-  - name: terrain
-    uniqueID: 710494793
+  - name: Terrain
+    uniqueID: 1491638597
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tree
+    uniqueID: 3730745941
+    locked: 0
+  - name: river
+    uniqueID: 689811203
     locked: 0
