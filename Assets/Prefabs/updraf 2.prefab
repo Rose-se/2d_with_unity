@@ -144,6 +144,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6651831088987643339, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651831088987643339, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364161896032187750, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364161896032187750, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7364161896032187750, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
       propertyPath: m_SortingLayer
       value: -1
@@ -181,10 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21560c13d709b954e948ba5576f0ed17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoint:
-  - {fileID: 7602520035414341482}
-  - {fileID: 8824357738345877663}
-  speed: 5
 --- !u!4 &8059605430311224118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2741514229722910206, guid: d2fe1e0a59f94bb4e850e3700428e57d, type: 3}
