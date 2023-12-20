@@ -5,3 +5,9 @@ Logs
 
 
 .fake
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+*.dwlt
+*.settings
+UserSettings/Layouts/default-2022.dwlt
