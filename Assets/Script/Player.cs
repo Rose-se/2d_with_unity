@@ -10,30 +10,29 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private CapsuleCollider2D coll;
     private Animator anim;
-    private enum MovementState { idle,running,jumping,attack,death}
+    private enum MovementState { idle,running,jumping,falling,attack}
     private float dirX = 0;
     [SerializeField] private float movementSpeed = 7f;
-    [SerializeField] private float junpForce = 16f;
+    [SerializeField] private float jumpForce = 16f;
+    [SerializeField] private LayerMask jumpableGround;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        coll = GetComponent<CapsuleCollider2D>();
     }
     private void Update()
     {   
+        UpdateAnimationState();
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movementSpeed,rb.velocity.y);
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity = new Vector3(rb.velocity.x ,junpForce);
+            rb.velocity = new Vector3(rb.velocity.x ,jumpForce);
         }
-        if(Input.GetMouseButtonDown(0))
-        {
-            Attack();
-        }
-        UpdateAnimationState();
     }
     private void UpdateAnimationState()
     {
@@ -56,7 +55,19 @@ public class Player : MonoBehaviour
         {
             state = MovementState.jumping;
         }
+        else  if(rb.velocity.y < -.1f)
+        {
+            state = MovementState.falling;
+        }
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            state = MovementState.attack;
+        }
         anim.SetInteger("state",(int)state);
+    }
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center,coll.bounds.size,0f,Vector2.down,1f,jumpableGround);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -67,14 +78,11 @@ public class Player : MonoBehaviour
     }
     private void Die()
     {
-        anim.SetTrigger("death");
+        anim.SetBool("death",true);
+        RestartGame();
     }
     private void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    private void Attack()
-    {
-        anim.SetTrigger("Attack");//play animation attack
     }
 }

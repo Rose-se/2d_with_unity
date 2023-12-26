@@ -24,23 +24,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AdditionalTexture:
-        m_Texture: {fileID: 2800000, guid: 352eedab30797fa41b34ec4e4abecb97, type: 3}
+        m_Texture: {fileID: 2800000, guid: efdf422f1371d244ba22ee906ebf441c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamTexture:
-        m_Texture: {fileID: 2800000, guid: 5f9b6fb959d19a241b3efbcaa90b5a77, type: 3}
+        m_Texture: {fileID: 2800000, guid: 505c7d4db852d394382684750b78453d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Highlight:
-        m_Texture: {fileID: 2800000, guid: 84ca0967d8e116a48bef3706d3fdc558, type: 3}
+        m_Texture: {fileID: 2800000, guid: a61b21d058fb0c54083d58fc11baea4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 38ab8aca4d89a4c4f93b72ac8d1e3f8e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 70a3d5a472097e748a082127dd277787, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise:
-        m_Texture: {fileID: 2800000, guid: d12dc5b6df76c6b42844432e6b9f4005, type: 3}
+        m_Texture: {fileID: 2800000, guid: aba16980b1b177e4ab0bdb55aacf2f27, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
