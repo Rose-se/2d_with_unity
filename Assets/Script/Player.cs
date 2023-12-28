@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     private float dirX = 0;
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float jumpForce = 16f;
+    [SerializeField] private float fallspeed = 5f;
     [SerializeField] private LayerMask jumpableGround;
+    Vector2 vector2;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +34,10 @@ public class Player : MonoBehaviour
         if(Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector3(rb.velocity.x ,jumpForce);
+        }
+        if(rb.velocity.y <0)
+        {
+            rb.velocity -=vector2 * fallspeed * Time.deltaTime;
         }
     }
     private void UpdateAnimationState()

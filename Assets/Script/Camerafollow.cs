@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Camera_follow : MonoBehaviour
+public class Camerafollow : MonoBehaviour
 {   
     public float camera_speed = 2f;
     public float yoffset = -1;
