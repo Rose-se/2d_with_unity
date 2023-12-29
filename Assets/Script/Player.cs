@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     private float dirX = 0;
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float jumpForce = 16f;
-    [SerializeField] private float fallSpeed = 5f;
+    [SerializeField] private float fallSpeed = 2.5f;
     [SerializeField] private LayerMask jumpableGround;
     private bool attacking = false;
 
@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
         {
             state = MovementState.Jumping;
         }
-        else if (rb.velocity.y < -0.1f)
+        else if (rb.velocity.y < -0.1f && state != MovementState.Jumping)
         {
             state = MovementState.Falling;
         }
