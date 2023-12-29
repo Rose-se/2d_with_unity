@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public bool Isdeath { get; private set; }
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private CapsuleCollider2D coll;
@@ -18,6 +19,8 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     private bool attacking = false;
 
+    [SerializeField] private float raycastRadius = 0.1f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,24 +31,39 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        UpdateAnimationState();
         dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * movementSpeed, rb.velocity.y);
 
+        // Jump logic
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        if (rb.velocity.y < 0)
+        // Attack logic
+        if (Input.GetKey(KeyCode.F))
         {
-            rb.velocity -= Vector2.up * fallSpeed * Time.deltaTime;
+            attacking = true; // Start attacking
+        }
+        else
+        {
+            attacking = false; // Stop attacking when the key is released
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // Movement logic
+        rb.velocity = new Vector2(dirX * movementSpeed, rb.velocity.y);
+
+        // Falling logic
+        if (rb.velocity.y < 0 && !IsGrounded())
+        {
+            // Apply additional gravity when falling
+            rb.velocity += Vector2.up * Physics2D.gravity.y * fallSpeed * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            attacking = !attacking; // Toggle attacking
-        }
+        // Update animation state
+        UpdateAnimationState();
     }
 
     private void UpdateAnimationState()
@@ -85,7 +103,11 @@ public class Player : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 1f, jumpableGround);
+        Vector2 colliderCenter = new Vector2(coll.bounds.center.x, coll.bounds.center.y) + coll.offset;
+        float colliderExtentsY = coll.bounds.extents.y;
+
+        RaycastHit2D hit = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + 0.1f, jumpableGround);
+        return hit.collider != null;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -99,12 +121,6 @@ public class Player : MonoBehaviour
     private void Die()
     {
         anim.SetBool("death", true);
-        StartCoroutine(RestartGameWithDelay());
-    }
-
-    private IEnumerator RestartGameWithDelay()
-    {
-        yield return new WaitForSeconds(2.0f); // Add delay before restarting the scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Isdeath = true;
     }
 }

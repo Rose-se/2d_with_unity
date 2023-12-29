@@ -1,16 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class Camerafollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {   
-    [SerializeField] private float camera_speed = 2f;
-    [SerializeField] private float yoffset = -1;
+    [SerializeField] private float xSpeed = 2f;
+    [SerializeField] private float ySpeed = 1.5f; // Adjust this value to control the Y-axis movement speed
     [SerializeField] private Transform target;
+
     void Update()
     {
-        Vector3 newPosistion = new Vector3(target.position.x,target.position.y+yoffset,-10f);
-        transform.position = Vector3.Slerp(transform.position,newPosistion,camera_speed*Time.deltaTime);
+        float targetX = Mathf.Lerp(transform.position.x, target.position.x, xSpeed * Time.deltaTime);
+        float targetY = Mathf.Lerp(transform.position.y, target.position.y, ySpeed * Time.deltaTime);
+
+        Vector3 targetPosition = new Vector3(targetX, targetY, -10f);
+
+        transform.position = targetPosition;
     }
 }

@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +8,28 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Vector2 spawnpoint;
     [SerializeField] private bool random;
     [SerializeField] private GameObject player;
+    private Animator playerAnimator;
+    private bool isPlayerDeath;
+
+    private void Start()
+    {
+        playerAnimator = player.GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        // Check for player death condition
+        if (player.CompareTag("Player") && !isPlayerDeath)
+        {
+            // Assuming you have a boolean variable indicating death
+            isPlayerDeath = player.GetComponent<Player>().Isdeath;
+
+            if (isPlayerDeath)
+            {
+                StartCoroutine(RestartGameAfterDelay(2.0f));
+            }
+        }
+    }
 
     private void OnSpawnPrefab()
     {
@@ -15,7 +37,8 @@ public class GameManager : MonoBehaviour
         {
             float x = Random.Range(-8, 80);
             float y = Random.Range(-4, 40);
-            Instantiate(prefab, new Vector2(x, y), Quaternion.identity);
+            Vector2 randomSpawnPoint = new Vector2(x, y);
+            Instantiate(prefab, randomSpawnPoint, Quaternion.identity);
         }
         else
         {
@@ -23,17 +46,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-  /*  private void playerdie()
+    private IEnumerator RestartGameAfterDelay(float delay)
     {
-        if(gameObject.CompareTag("Player"))
-        {
-
-        }
-    }
-    private void RestartGame()
-    {
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    */
 }
