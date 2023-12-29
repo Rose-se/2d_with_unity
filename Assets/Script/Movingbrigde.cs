@@ -1,24 +1,42 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Movingbrigde : MonoBehaviour
+public class MovingBridge : MonoBehaviour
 {
-    [SerializeField] private GameObject[]waypoint;
+    [SerializeField] private Transform[] waypoints;
     private int currentWaypointIndex = 0;
     [SerializeField] private float speed = 5f;
+
+    private void Start()
+    {
+        if (waypoints.Length == 0)
+        {
+            Debug.LogWarning("No waypoints assigned to the MovingBridge script.");
+        }
+    }
+
     private void Update()
     {
-        if(Vector2.Distance(waypoint[currentWaypointIndex].transform.position,transform.position)<.1f)
+        if (waypoints.Length == 0)
+        {
+            return; // No waypoints to move towards.
+        }
+
+        MoveTowardsWaypoint();
+    }
+
+    private void MoveTowardsWaypoint()
+    {
+        if (Vector2.Distance(waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
         {
             currentWaypointIndex++;
-            if(currentWaypointIndex >= waypoint.Length)
-            { 
-            currentWaypointIndex = 0;
+
+            if (currentWaypointIndex >= waypoints.Length)
+            {
+                currentWaypointIndex = 0;
             }
         }
-        transform.position = Vector2.MoveTowards(transform.position,waypoint[currentWaypointIndex].transform.position,Time.deltaTime*speed);
-    }
-    
 
+        transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
+    }
 }
