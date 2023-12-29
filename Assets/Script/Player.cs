@@ -17,9 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce = 16f;
     [SerializeField] private float fallSpeed = 2.5f;
     [SerializeField] private LayerMask jumpableGround;
-    private bool attacking = false;
-
     [SerializeField] private float raycastRadius = 0.1f;
+    private bool attacking = false;
 
     private void Start()
     {
@@ -93,7 +92,7 @@ public class Player : MonoBehaviour
         {
             state = MovementState.Jumping;
         }
-        else if (rb.velocity.y < -0.1f && state != MovementState.Jumping)
+        else if (rb.velocity.y < -0.5f && state != MovementState.Jumping)
         {
             state = MovementState.Falling;
         }
@@ -106,10 +105,21 @@ public class Player : MonoBehaviour
         Vector2 colliderCenter = new Vector2(coll.bounds.center.x, coll.bounds.center.y) + coll.offset;
         float colliderExtentsY = coll.bounds.extents.y;
 
-        RaycastHit2D hit = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + 0.1f, jumpableGround);
-        return hit.collider != null;
-    }
+        // Perform a raycast to check if the player is grounded on a regular surface
+        RaycastHit2D hitRegularGround = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius, jumpableGround);
 
+        if (hitRegularGround.collider != null)
+        {
+            return true;
+        }
+        // If not grounded on a regular surface, check if the object below is a falling object
+        RaycastHit2D hitFallingObj = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius);
+        if (hitFallingObj.collider != null && hitFallingObj.collider.CompareTag("Untagged"))
+        {
+            return true;
+        }
+        return false;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Mob"))
