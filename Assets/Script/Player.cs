@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float raycastRadius = 0.1f;
     private bool attacking = false;
-
+    private bool jumping = false;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,11 +33,15 @@ public class Player : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
 
         // Jump logic
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetKey(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumping = true;
         }
-
+        else
+        {
+            jumping = false; // Stop attacking when the key is released
+        }
         // Attack logic
         if (Input.GetKey(KeyCode.F))
         {
@@ -88,11 +92,11 @@ public class Player : MonoBehaviour
             state = MovementState.Idle;
         }
 
-        if (rb.velocity.y > 0.1f)
+        if (jumping)
         {
             state = MovementState.Jumping;
         }
-        else if (rb.velocity.y < -0.5f && state != MovementState.Jumping)
+        else if (rb.velocity.y < -0.5f&&!IsGrounded())
         {
             state = MovementState.Falling;
         }
