@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     private const float RestartDelay = 2.0f;
     private const float SpawnDelay = 1.5f; // Adjust this value for the spawn delay
-    private const float ObjectLifetime = 5.0f; // Adjust this value for the object lifetime
+    private const float ObjectLifetime = 10.0f; // Adjust this value for the object lifetime
 
     private List<GameObject> spawnedObjects = new List<GameObject>();
 
