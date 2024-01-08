@@ -8,9 +8,14 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance => _instance;
 
-    [SerializeField] private GameObject prefab, player;
+    [Header("Game Objects")]
+    [SerializeField] private GameObject prefab;
+    [SerializeField] private GameObject player;
+    
+    [Header("Spawn Settings")]
     [SerializeField] private Vector2 spawnpoint;
     [SerializeField] private bool random;
+
     private Animator playerAnimator;
     private bool isPlayerDeath, isRestarting;
 
@@ -35,13 +40,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (!player || !prefab)
+        if (player == null || prefab == null)
         {
-            Debug.LogError("Player or Prefab not set in GameManager!");
+            Debug.LogError("Player or Prefab not set in GameManager! Please assign them in the Unity Editor.");
             return;
         }
-        playerAnimator = player.GetComponent<Animator>();
 
+        playerAnimator = player.GetComponent<Animator>();
         StartCoroutine(SpawnPrefabWithDelay());
         StartCoroutine(CleanupObjects());
     }
@@ -53,20 +58,24 @@ public class GameManager : MonoBehaviour
 
     private void CheckPlayerDeath()
     {
-        if (player.CompareTag("Player") && !isPlayerDeath)
+        if (player != null && player.CompareTag("Player") && !isPlayerDeath)
         {
-            isPlayerDeath = player.GetComponent<Player>().Isdeath;
-
-            if (isPlayerDeath && !isRestarting)
+            Player playerComponent = player.GetComponent<Player>();
+            if (playerComponent != null)
             {
-                StartCoroutine(RestartGameAfterDelay(RestartDelay));
+                isPlayerDeath = playerComponent.Isdeath;
+
+                if (isPlayerDeath && !isRestarting)
+                {
+                    StartCoroutine(RestartGameAfterDelay(RestartDelay));
+                }
             }
         }
     }
 
     private IEnumerator SpawnPrefabWithDelay()
     {
-        while (true)
+        while (!isPlayerDeath)  
         {
             SpawnPrefab();
             yield return new WaitForSeconds(SpawnDelay);
@@ -86,7 +95,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator CleanupObjects()
     {
-        while (true)
+        while (!isPlayerDeath)
         {
             yield return new WaitForSeconds(ObjectLifetime);
 

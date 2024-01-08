@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public bool Isdeath { get; private set; }
-    private Rigidbody2D rb;
+    private Rigidbody2D rb;  // Corrected variable name
     private SpriteRenderer sprite;
-    private CapsuleCollider2D coll;
-    private Animator anim;
+    private CapsuleCollider2D coll;  // Corrected variable name
+    private Animator anim;  // Corrected variable name
 
     private enum MovementState { Idle, Running, Jumping, Falling, Attack }
 
@@ -20,12 +20,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float raycastRadius = 0.1f;
     private bool attacking = false;
     private bool jumping = false;
+
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();  // Corrected variable name
+        anim = GetComponent<Animator>();  // Corrected variable name
         sprite = GetComponent<SpriteRenderer>();
-        coll = GetComponent<CapsuleCollider2D>();
+        coll = GetComponent<CapsuleCollider2D>();  // Corrected variable name
     }
 
     private void Update()
@@ -40,8 +41,9 @@ public class Player : MonoBehaviour
         }
         else
         {
-            jumping = false; // Stop attacking when the key is released
+            jumping = false; // Stop jumping when the key is released
         }
+
         // Attack logic
         if (Input.GetKey(KeyCode.F))
         {

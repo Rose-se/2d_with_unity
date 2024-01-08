@@ -27,42 +27,34 @@ public class MovingBridge : MonoBehaviour
 
     private void MoveTowardsWaypoint()
     {
-        if (waypoints[currentWaypointIndex] == null)
-        {
-            Debug.LogWarning("Waypoint is null. Skipping to the next waypoint.");
-            currentWaypointIndex++;
-
-            if (currentWaypointIndex >= waypoints.Length)
-            {
-                currentWaypointIndex = 0;
-            }
-
-            return;
-        }
-
-        if (Vector2.Distance(waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
-        {
-            currentWaypointIndex++;
-
-            if (currentWaypointIndex >= waypoints.Length)
-            {
-                currentWaypointIndex = 0;
-            }
-        }
+        SkipToNextWaypointIfNeeded();
 
         if (waypoints[currentWaypointIndex] != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
         }
         else
         {
             Debug.LogWarning("Waypoint is null. Skipping to the next waypoint.");
-            currentWaypointIndex++;
+            SkipToNextWaypoint();
+        }
+    }
 
-            if (currentWaypointIndex >= waypoints.Length)
-            {
-                currentWaypointIndex = 0;
-            }
+    private void SkipToNextWaypointIfNeeded()
+    {
+        if (Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
+        {
+            SkipToNextWaypoint();
+        }
+    }
+
+    private void SkipToNextWaypoint()
+    {
+        currentWaypointIndex++;
+
+        if (currentWaypointIndex >= waypoints.Length)
+        {
+            currentWaypointIndex = 0;
         }
     }
 }

@@ -1,24 +1,60 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Updraf : MonoBehaviour
+public class Updraf: MonoBehaviour
 {
-    [SerializeField] private GameObject[]waypoint;
+    [SerializeField] private Transform[] waypoints;
     private int currentWaypointIndex = 0;
     [SerializeField] private float speed = 5f;
+
+    private void Start()
+    {
+        if (waypoints.Length == 0)
+        {
+            Debug.LogWarning("No waypoints assigned to the MovingBridge script.");
+        }
+    }
+
     private void Update()
     {
-        if(Vector2.Distance(waypoint[currentWaypointIndex].transform.position,transform.position)<.1f)
+        if (waypoints.Length == 0)
         {
-            currentWaypointIndex++;
-            if(currentWaypointIndex >= waypoint.Length)
-            { 
-            currentWaypointIndex = 0;
-            }
+            return; // No waypoints to move towards.
         }
-        transform.position = Vector2.MoveTowards(transform.position,waypoint[currentWaypointIndex].transform.position,Time.deltaTime*speed);
-    }
-    
 
+        MoveTowardsWaypoint();
+    }
+
+    private void MoveTowardsWaypoint()
+    {
+        SkipToNextWaypointIfNeeded();
+
+        if (waypoints[currentWaypointIndex] != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
+        }
+        else
+        {
+            Debug.LogWarning("Waypoint is null. Skipping to the next waypoint.");
+            SkipToNextWaypoint();
+        }
+    }
+
+    private void SkipToNextWaypointIfNeeded()
+    {
+        if (Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
+        {
+            SkipToNextWaypoint();
+        }
+    }
+
+    private void SkipToNextWaypoint()
+    {
+        currentWaypointIndex++;
+
+        if (currentWaypointIndex >= waypoints.Length)
+        {
+            currentWaypointIndex = 0;
+        }
+    }
 }
