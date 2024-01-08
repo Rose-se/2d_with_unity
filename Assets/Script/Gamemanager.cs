@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
-    public static GameManager Instance => _instance ?? (_instance = FindObjectOfType<GameManager>());
+    public static GameManager Instance => _instance;
 
     [SerializeField] private GameObject prefab, player;
     [SerializeField] private Vector2 spawnpoint;
@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     private bool isPlayerDeath, isRestarting;
 
     private const float RestartDelay = 2.0f;
-    private const float SpawnDelay = 1.5f; // Adjust this value for the spawn delay
-    private const float ObjectLifetime = 10.0f; // Adjust this value for the object lifetime
+    private const float SpawnDelay = 1.5f;
+    private const float ObjectLifetime = 10.0f;
 
     private List<GameObject> spawnedObjects = new List<GameObject>();
 
@@ -42,9 +42,7 @@ public class GameManager : MonoBehaviour
         }
         playerAnimator = player.GetComponent<Animator>();
 
-        // Start the coroutine to spawn the prefab with a delay
         StartCoroutine(SpawnPrefabWithDelay());
-        // Start the coroutine to clean up spawned objects after their lifetime
         StartCoroutine(CleanupObjects());
     }
 
@@ -68,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnPrefabWithDelay()
     {
-        while (true) // Infinite loop for continuous spawning
+        while (true)
         {
             SpawnPrefab();
             yield return new WaitForSeconds(SpawnDelay);
@@ -88,10 +86,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator CleanupObjects()
     {
-        while (true) // Infinite loop for continuous cleanup
+        while (true)
         {
             yield return new WaitForSeconds(ObjectLifetime);
-            // Destroy spawned objects after their lifetime
+
             foreach (GameObject obj in spawnedObjects)
             {
                 if (obj != null)
@@ -99,7 +97,7 @@ public class GameManager : MonoBehaviour
                     Destroy(obj);
                 }
             }
-            // Clear the list
+
             spawnedObjects.Clear();
         }
     }
