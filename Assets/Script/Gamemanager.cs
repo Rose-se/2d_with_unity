@@ -9,13 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
 
     [Header("Game Objects")]
-    [SerializeField] private GameObject prefab;
     [SerializeField] private GameObject player;
-    
-    [Header("Spawn Settings")]
-    [SerializeField] private Vector2 spawnpoint;
-    [SerializeField] private bool random;
-
     private Animator playerAnimator;
     private bool isPlayerDeath, isRestarting;
 
@@ -37,23 +31,26 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
     private void Start()
     {
-        if (player == null || prefab == null)
+        if (player == null)
         {
-            Debug.LogError("Player or Prefab not set in GameManager! Please assign them in the Unity Editor.");
+            Debug.LogError("Player not set in GameManager! Please assign it in the Unity Editor.");
             return;
         }
 
         playerAnimator = player.GetComponent<Animator>();
-        StartCoroutine(SpawnPrefabWithDelay());
-        StartCoroutine(CleanupObjects());
+
+    // Start the CleanupObjectsCoroutine 
+        StartCoroutine(CleanupObjectsCoroutine());
     }
 
     private void Update()
     {
-        CheckPlayerDeath();
+        if (player != null)
+        {
+            CheckPlayerDeath();
+        }
     }
 
     private void CheckPlayerDeath()
@@ -72,28 +69,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    private IEnumerator SpawnPrefabWithDelay()
-    {
-        while (!isPlayerDeath)  
-        {
-            SpawnPrefab();
-            yield return new WaitForSeconds(SpawnDelay);
-        }
-    }
-
-    private void SpawnPrefab()
-    {
-        Vector2 spawnPosition = random
-            ? new Vector2(Random.Range(-8, 80), Random.Range(-4, 40))
-            : spawnpoint;
-
-        GameObject newObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
-        spawnedObjects.Add(newObject);
-        Debug.Log("Spawning Prefab");
-    }
-
-    private IEnumerator CleanupObjects()
+    private IEnumerator CleanupObjectsCoroutine()
     {
         while (!isPlayerDeath)
         {
