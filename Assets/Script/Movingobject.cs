@@ -1,17 +1,18 @@
 using System.Collections;
 using UnityEngine;
 
-public class Movingobject : MonoBehaviour
+public class MovingObject : MonoBehaviour
 {
     [SerializeField] private Transform[] waypoints;
-    private int currentWaypointIndex = 0;
     [SerializeField] private float speed = 5f;
+
+    private int currentWaypointIndex = 0;
 
     private void Start()
     {
         if (waypoints.Length == 0)
         {
-            Debug.LogWarning("No waypoints assigned to the MovingBridge script.");
+            Debug.LogWarning("No waypoints assigned to the MovingObject script on GameObject: " + gameObject.name);
         }
     }
 
@@ -50,11 +51,11 @@ public class Movingobject : MonoBehaviour
 
     private void SkipToNextWaypoint()
     {
-        currentWaypointIndex++;
-
-        if (currentWaypointIndex >= waypoints.Length)
+        if (waypoints[currentWaypointIndex] == null)
         {
-            currentWaypointIndex = 0;
+            Debug.LogWarning("Next waypoint is null.");
         }
+
+        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
     }
 }

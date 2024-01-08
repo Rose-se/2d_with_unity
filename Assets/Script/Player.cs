@@ -1,40 +1,45 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public bool Isdeath { get; private set; }
-    private Rigidbody2D rb;  // Corrected variable name
+    public bool IsDeath { get; private set; }
+
+    private Rigidbody2D rb;
     private SpriteRenderer sprite;
-    private CapsuleCollider2D coll;  // Corrected variable name
-    private Animator anim;  // Corrected variable name
+    private CapsuleCollider2D coll;
+    private Animator anim;
 
     private enum MovementState { Idle, Running, Jumping, Falling, Attack }
 
-    private float dirX = 0;
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float jumpForce = 16f;
     [SerializeField] private float fallSpeed = 2.5f;
-    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float raycastRadius = 0.1f;
+
+    private float movementInput = 0f;
     private bool attacking = false;
     private bool jumping = false;
 
+    private const float FallingThreshold = -0.5f;
+    private const KeyCode JumpKeyCode = KeyCode.Space;
+    private const KeyCode AttackKeyCode = KeyCode.F;
+
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();  // Corrected variable name
-        anim = GetComponent<Animator>();  // Corrected variable name
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        coll = GetComponent<CapsuleCollider2D>();  // Corrected variable name
+        coll = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal");
+        movementInput = Input.GetAxisRaw("Horizontal");
 
         // Jump logic
-        if (Input.GetKey(KeyCode.Space) && IsGrounded())
+        if(Input.GetKey(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumping = true;
@@ -43,7 +48,6 @@ public class Player : MonoBehaviour
         {
             jumping = false; // Stop jumping when the key is released
         }
-
         // Attack logic
         if (Input.GetKey(KeyCode.F))
         {
@@ -58,7 +62,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         // Movement logic
-        rb.velocity = new Vector2(dirX * movementSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(movementInput * movementSpeed, rb.velocity.y);
 
         // Falling logic
         if (rb.velocity.y < 0 && !IsGrounded())
@@ -70,35 +74,30 @@ public class Player : MonoBehaviour
         // Update animation state
         UpdateAnimationState();
     }
-
     private void UpdateAnimationState()
     {
-        MovementState state;
+        MovementState state = MovementState.Idle;
 
         if (attacking)
         {
             state = MovementState.Attack;
         }
-        else if (dirX > 0f)
+        else if (movementInput > 0f)
         {
             state = MovementState.Running;
             sprite.flipX = false;
         }
-        else if (dirX < 0f)
+        else if (movementInput < 0f)
         {
             state = MovementState.Running;
             sprite.flipX = true;
-        }
-        else
-        {
-            state = MovementState.Idle;
         }
 
         if (jumping)
         {
             state = MovementState.Jumping;
         }
-        else if (rb.velocity.y < -0.5f&&!IsGrounded())
+        else if (rb.velocity.y < FallingThreshold && !IsGrounded())
         {
             state = MovementState.Falling;
         }
@@ -112,7 +111,7 @@ public class Player : MonoBehaviour
         float colliderExtentsY = coll.bounds.extents.y;
 
         // Perform a raycast to check if the player is grounded on a regular surface
-        RaycastHit2D hitRegularGround = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius, jumpableGround);
+        RaycastHit2D hitRegularGround = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius, groundLayer);
 
         if (hitRegularGround.collider != null)
         {
@@ -136,7 +135,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        anim.SetBool("death", true);
-        Isdeath = true;
+        anim.SetBool("IsDeath", true);
+        IsDeath = true;
     }
 }
