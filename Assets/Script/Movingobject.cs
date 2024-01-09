@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
-    [SerializeField] private Transform[] waypoints;
+    [SerializeField] private Transform[] Waypoints;
     [SerializeField] private float speed = 5f;
 
     private int currentWaypointIndex = 0;
 
     private void Start()
     {
-        if (waypoints.Length == 0)
+        if (Waypoints.Length == 0)
         {
             Debug.LogWarning("No waypoints assigned to the MovingObject script on GameObject: " + gameObject.name);
         }
@@ -18,7 +18,7 @@ public class MovingObject : MonoBehaviour
 
     private void Update()
     {
-        if (waypoints.Length == 0)
+        if (Waypoints.Length == 0)
         {
             return; // No waypoints to move towards.
         }
@@ -30,9 +30,9 @@ public class MovingObject : MonoBehaviour
     {
         SkipToNextWaypointIfNeeded();
 
-        if (waypoints[currentWaypointIndex] != null)
+        if (Waypoints[currentWaypointIndex] != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
+            transform.position = Vector3.MoveTowards(transform.position, Waypoints[currentWaypointIndex].position, Time.deltaTime * speed);
         }
         else
         {
@@ -43,7 +43,7 @@ public class MovingObject : MonoBehaviour
 
     private void SkipToNextWaypointIfNeeded()
     {
-        if (Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
+        if (Vector3.Distance(Waypoints[currentWaypointIndex].position, transform.position) < 0.1f)
         {
             SkipToNextWaypoint();
         }
@@ -51,11 +51,11 @@ public class MovingObject : MonoBehaviour
 
     private void SkipToNextWaypoint()
     {
-        if (waypoints[currentWaypointIndex] == null)
+        if (Waypoints[currentWaypointIndex] == null)
         {
             Debug.LogWarning("Next waypoint is null.");
         }
 
-        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
+        currentWaypointIndex = (currentWaypointIndex + 1) % Waypoints.Length;
     }
 }

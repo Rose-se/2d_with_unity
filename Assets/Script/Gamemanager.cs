@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private const float SpawnDelay = 1.5f;
     private const float ObjectLifetime = 10.0f;
 
-    private List<GameObject> spawnedObjects = new List<GameObject>();
+    private List<GameObject> SpawnedObjects = new List<GameObject>();
 
     private void Awake()
     {
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(ObjectLifetime);
 
-            foreach (GameObject obj in spawnedObjects)
+            foreach (GameObject obj in SpawnedObjects)
             {
                 if (obj != null)
                 {
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            spawnedObjects.Clear();
+            SpawnedObjects.Clear();
         }
     }
 
