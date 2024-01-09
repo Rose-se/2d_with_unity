@@ -1,7 +1,11 @@
 Library
 Temp
-UserSettings
 Logs
 
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+UserSettings/Layouts/default-2022.dwlt
 
 .fake
