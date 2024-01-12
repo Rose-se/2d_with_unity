@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float fallSpeed = 2.5f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float raycastRadius = 0.1f;
+    [SerializeField] private AudioSource deathSound; 
 
     private float movementInput = 0f;
     private bool attacking = false;
@@ -137,5 +138,6 @@ public class Player : MonoBehaviour
     {
         anim.SetBool("IsDeath", true);
         IsDeath = true;
+        deathSound.Play();
     }
 }
