@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float fallSpeed = 2.5f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float raycastRadius = 0.1f;
+    [SerializeField] private ParticleSystem collectParticle = null;
+    [SerializeField] private GameObject tomb;
+    [SerializeField] private Transform[] spawnPoint;
+    private int currentSpawnpointIndex = 0;
 
     private float movementInput = 0f;
     private bool attacking = false;
@@ -132,10 +136,25 @@ public class Player : MonoBehaviour
             Die();
         }
     }
-
+    private void SpawnTomb()
+    {
+        if (currentSpawnpointIndex < spawnPoint.Length)
+        {
+            Vector2 spawnPosition = spawnPoint[currentSpawnpointIndex].position;
+            Instantiate(tomb, spawnPosition, Quaternion.identity);
+            Debug.Log("Spawning tomb");
+        }
+        else
+        {
+            Debug.LogError("Invalid currentSpawnpointIndex. Check the length of spawnPoint array.");
+        }
+    }
     private void Die()
     {
         anim.SetBool("IsDeath", true);
+        collectParticle.Play();
+        SpawnTomb();
         IsDeath = true;
+        currentSpawnpointIndex++;
     }
 }

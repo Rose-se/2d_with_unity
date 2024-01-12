@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private bool isPlayerDeath;
     private bool isRestarting;
 
-    private const float restartDelay = 2.0f;
+    private const float restartDelay = 5.0f;
     private const float spawnDelay = 1.5f;
     private const float objectLifetime = 10.0f;
 
