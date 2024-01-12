@@ -14,13 +14,13 @@ public class GameManager : MonoBehaviour
     private bool isPlayerDeath;
     private bool isRestarting;
 
-    private const float RestartDelay = 2.0f;
-    private const float SpawnDelay = 1.5f;
-    private const float ObjectLifetime = 10.0f;
+    private const float restartDelay = 5.0f;
+    private const float spawnDelay = 1.5f;
+    private const float objectLifetime = 10.0f;
 
     private List<GameObject> SpawnedObjects = new List<GameObject>();
 
-    private void Awake()
+    private void Awake() 
     {
         if (_instance != null && _instance != this)
         {
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    StartCoroutine(RestartGameAfterDelay(RestartDelay));
+                    StartCoroutine(RestartGameAfterDelay(restartDelay));
                 }
             }
             else
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     {
         while (!isPlayerDeath)
         {
-            yield return new WaitForSeconds(ObjectLifetime);
+            yield return new WaitForSeconds(objectLifetime);
 
             foreach (GameObject obj in SpawnedObjects)
             {
