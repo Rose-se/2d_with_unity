@@ -10,12 +10,10 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Objects")]
     [SerializeField] private GameObject player;
+    [SerializeField] private UnityEngine.Screen screen;
     private Animator playerAnimator;
     private bool isPlayerDeath;
     private bool isRestarting;
-
-    private const float restartDelay = 5.0f;
-    private const float spawnDelay = 1.5f;
     private const float objectLifetime = 10.0f;
 
     private List<GameObject> SpawnedObjects = new List<GameObject>();
@@ -74,7 +72,8 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    StartCoroutine(RestartGameAfterDelay(restartDelay));
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    SceneManager.LoadScene(3);
                 }
             }
             else
@@ -101,15 +100,6 @@ public class GameManager : MonoBehaviour
             SpawnedObjects.Clear();
         }
     }
-
-    private IEnumerator RestartGameAfterDelay(float delay)
-    {
-        isRestarting = true;
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        isRestarting = false;
-    }
-
     private void LogError(string message)
     {
         Debug.LogError($"[{nameof(GameManager)}] {message}");
