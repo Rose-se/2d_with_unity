@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158290923604513042, guid: bec98a0563de7c0428fcfd7530e5d95a, type: 3}
       propertyPath: m_Text
-      value: Play Agint
+      value: Play Again
       objectReference: {fileID: 0}
     - target: {fileID: 9158290923604513042, guid: bec98a0563de7c0428fcfd7530e5d95a, type: 3}
       propertyPath: m_FontData.m_MinSize
