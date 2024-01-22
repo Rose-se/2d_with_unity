@@ -8,6 +8,7 @@ public class LoadSceneMenu : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        Debug.Log("Enter");
     }
 }
 
