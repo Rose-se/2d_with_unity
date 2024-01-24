@@ -113,6 +113,7 @@
     <Compile Include="Assets\Script\Flameshort.cs" />
     <Compile Include="Assets\Script\Movingobject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Script\RaycastScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
