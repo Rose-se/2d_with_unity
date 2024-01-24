@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spwanfireballmob : MonoBehaviour
+public class SpwanFireballmob : MonoBehaviour
 {   
     [SerializeField] private GameObject prefab;
     [SerializeField] private Vector2 spawnpoint;
@@ -47,8 +47,6 @@ public class Spwanfireballmob : MonoBehaviour
     {
         while (true)
         {
-            // Your cleanup logic here
-
             yield return null;
         }
     }

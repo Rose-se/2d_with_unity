@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Grounded
-  - 
+  - Objects
   - 
   - 
   - 
@@ -57,4 +57,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: stone
+    uniqueID: 3697312979
     locked: 0
