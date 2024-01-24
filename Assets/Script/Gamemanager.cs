@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     [Header("Game Objects")]
     [SerializeField] private GameObject player;
     [SerializeField] private UnityEngine.Screen screen;
+    [SerializeField] private Canvas gameOverText;
     private Animator playerAnimator;
     private bool isPlayerDeath;
     private bool isRestarting;
@@ -72,8 +74,8 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                    SceneManager.LoadScene(3);
+                    gameOverText.gameObject.SetActive(true);
+                    Time.timeScale=0;
                 }
             }
             else
