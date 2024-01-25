@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake() 
     {
+        Time.timeScale = 1;
         if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
@@ -60,12 +61,19 @@ public class GameManager : MonoBehaviour
         CheckPlayerDeath();
     }
 
+    private IEnumerator DelayedGameOver()
+    {
+        yield return new WaitForSeconds(2f);  // ปรับตัวเลขตามที่คุณต้องการ
+        gameOverText.gameObject.SetActive(true);
+        Time.timeScale = 0;
+    }
+
     private void CheckPlayerDeath()
     {
         bool isPlayerDeath = false;
 
         if (player != null && player.CompareTag("Player") && !isPlayerDeath)
-        {
+        {  
             Player playerComponent = player.GetComponent<Player>();
 
             if (playerComponent != null)
@@ -74,8 +82,7 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    gameOverText.gameObject.SetActive(true);
-                    Time.timeScale=0;
+                    StartCoroutine(DelayedGameOver());  // เริ่ม Coroutine ที่หน่วงเวลา
                 }
             }
             else

@@ -133,6 +133,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Mob"))
         {
+            
             Die();
         }
     }
@@ -140,9 +141,9 @@ public class Player : MonoBehaviour
     {
         if (currentSpawnpointIndex < spawnPoint.Length)
         {
-            Vector2 spawnPosition = spawnPoint[currentSpawnpointIndex].position;
-            Instantiate(tomb, spawnPosition, Quaternion.identity);
-            Debug.Log("Spawning tomb");
+        Vector2 playerPosition = transform.position; // transform.position ของผู้เล่น
+        Instantiate(tomb, playerPosition, Quaternion.identity);
+        Debug.Log("Spawning tomb at player position");
         }
         else
         {
