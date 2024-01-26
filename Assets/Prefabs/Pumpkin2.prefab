@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 7269223920100066142}
   - component: {fileID: 4842664881910658487}
   - component: {fileID: 1999677238446963535}
-  m_Layer: 0
+  - component: {fileID: 1104927876828893323}
+  - component: {fileID: 3871854591806841532}
+  m_Layer: 7
   m_Name: Pumpkin2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 479944833336063454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.1, y: 0, z: 0}
+  m_LocalPosition: {x: -27.1, y: -0.791, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -166,8 +168,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002445221, y: -0.083130956}
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.018082619, y: -0.35482714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,8 +180,100 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1170883, y: 0.793738}
+  m_Size: {x: 1.1483631, y: 0.25034565}
   m_EdgeRadius: 0
+--- !u!66 &1104927876828893323
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479944833336063454}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1999677238446963535}
+    m_ColliderPaths:
+    - - X: 11845284
+        Y: -4593086
+      - X: -11121979
+        Y: -4593086
+      - X: -11121979
+        Y: -9599999
+      - X: 11845284
+        Y: -9599999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.1844991, y: -0.9599999}
+      - {x: 1.1844991, y: -0.4593086}
+      - {x: -1.1121979, y: -0.45933792}
+      - {x: -1.1121687, y: -0.9599999}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 479944833336063454}
+--- !u!58 &3871854591806841532
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479944833336063454}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.076231, y: -0.084049225}
+  serializedVersion: 2
+  m_Radius: 0.40953445
 --- !u!1 &804014657917265512
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8941028104509248765}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pumpkin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804014657917265512}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 28.29, y: -2.05, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -229,7 +323,9 @@ GameObject:
   - component: {fileID: 8545217447853778741}
   - component: {fileID: 2332181203299682845}
   - component: {fileID: 7926092859946369843}
-  m_Layer: 0
+  - component: {fileID: 1029305032860431604}
+  - component: {fileID: 6483720867222826271}
+  m_Layer: 7
   m_Name: Pumpkin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +341,7 @@ Transform:
   m_GameObject: {fileID: 5194456942769797789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -335,8 +431,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 2.1076124
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -382,8 +478,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002445221, y: -0.083130956}
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.018082619, y: -0.35482714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -394,8 +490,100 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1170883, y: 0.793738}
+  m_Size: {x: 1.1483631, y: 0.25034565}
   m_EdgeRadius: 0
+--- !u!66 &1029305032860431604
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194456942769797789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 7926092859946369843}
+    m_ColliderPaths:
+    - - X: 11845284
+        Y: -4593086
+      - X: -11121979
+        Y: -4593086
+      - X: -11121979
+        Y: -9599999
+      - X: 11845284
+        Y: -9599999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.1844991, y: -0.9599999}
+      - {x: 1.1844991, y: -0.4593086}
+      - {x: -1.1121979, y: -0.45933792}
+      - {x: -1.1121687, y: -0.9599999}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 5194456942769797789}
+--- !u!58 &6483720867222826271
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194456942769797789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.076231, y: -0.084049225}
+  serializedVersion: 2
+  m_Radius: 0.40953445
 --- !u!1 &6519759111516740005
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +597,9 @@ GameObject:
   - component: {fileID: 2981286671861361431}
   - component: {fileID: 146710194856736867}
   - component: {fileID: 5554627185260288728}
-  m_Layer: 0
+  - component: {fileID: 2204098127913313608}
+  - component: {fileID: 5338983465139687224}
+  m_Layer: 7
   m_Name: Pumpkin2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +615,7 @@ Transform:
   m_GameObject: {fileID: 6519759111516740005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.380001, y: 0, z: 0}
+  m_LocalPosition: {x: -16.380001, y: -0.796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -562,8 +752,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002445221, y: -0.083130956}
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.018082619, y: -0.35482714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -574,8 +764,100 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1170883, y: 0.793738}
+  m_Size: {x: 1.1483631, y: 0.25034565}
   m_EdgeRadius: 0
+--- !u!66 &2204098127913313608
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519759111516740005}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 5554627185260288728}
+    m_ColliderPaths:
+    - - X: 11845284
+        Y: -4593086
+      - X: -11121979
+        Y: -4593086
+      - X: -11121979
+        Y: -9599999
+      - X: 11845284
+        Y: -9599999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.1844991, y: -0.9599999}
+      - {x: 1.1844991, y: -0.4593086}
+      - {x: -1.1121979, y: -0.45933792}
+      - {x: -1.1121687, y: -0.9599999}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 6519759111516740005}
+--- !u!58 &5338983465139687224
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519759111516740005}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.076231, y: -0.084049225}
+  serializedVersion: 2
+  m_Radius: 0.40953445
 --- !u!1 &6923085213376977514
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +873,7 @@ GameObject:
   - component: {fileID: 6808163339800874318}
   - component: {fileID: 6308212963595338271}
   - component: {fileID: 3657977683174266307}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pumpkin2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +889,7 @@ Transform:
   m_GameObject: {fileID: 6923085213376977514}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.48, y: 0, z: 0}
+  m_LocalPosition: {x: -37.48, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -744,8 +1026,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002445221, y: -0.083130956}
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.018082619, y: -0.35482714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -756,7 +1038,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1170883, y: 0.793738}
+  m_Size: {x: 1.1483631, y: 0.25034565}
   m_EdgeRadius: 0
 --- !u!58 &6308212963595338271
 CircleCollider2D:
@@ -863,7 +1145,9 @@ GameObject:
   - component: {fileID: 3194721537595746969}
   - component: {fileID: 2252430125010188645}
   - component: {fileID: 5276620003919806899}
-  m_Layer: 0
+  - component: {fileID: 72475745737946574}
+  - component: {fileID: 581470146959211084}
+  m_Layer: 7
   m_Name: Pumpkin2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +1163,7 @@ Transform:
   m_GameObject: {fileID: 8205498015542059388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.49, y: 0, z: 0}
+  m_LocalPosition: {x: -9.49, y: -1.297, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1016,8 +1300,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002445221, y: -0.083130956}
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.018082619, y: -0.35482714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1028,5 +1312,97 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1170883, y: 0.793738}
+  m_Size: {x: 1.1483631, y: 0.25034565}
   m_EdgeRadius: 0
+--- !u!66 &72475745737946574
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205498015542059388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 5276620003919806899}
+    m_ColliderPaths:
+    - - X: 11845284
+        Y: -4593086
+      - X: -11121979
+        Y: -4593086
+      - X: -11121979
+        Y: -9599999
+      - X: 11845284
+        Y: -9599999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.1844991, y: -0.9599999}
+      - {x: 1.1844991, y: -0.4593086}
+      - {x: -1.1121979, y: -0.45933792}
+      - {x: -1.1121687, y: -0.9599999}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 8205498015542059388}
+--- !u!58 &581470146959211084
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205498015542059388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.076231, y: -0.084049225}
+  serializedVersion: 2
+  m_Radius: 0.40953445
