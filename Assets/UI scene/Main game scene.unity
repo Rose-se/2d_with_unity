@@ -407,6 +407,18 @@ PrefabInstance:
       propertyPath: mainscene
       value: 
       objectReference: {fileID: 7066566474950209485}
+    - target: {fileID: 2155890394499791448, guid: 34c703660f76f8740a9d697fe56321ef, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2155890394499791448, guid: 34c703660f76f8740a9d697fe56321ef, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2155890394499791448, guid: 34c703660f76f8740a9d697fe56321ef, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 2222169213402019385, guid: 34c703660f76f8740a9d697fe56321ef, type: 3}
       propertyPath: m_Name
       value: Setting
@@ -512,6 +524,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1685716119}
+    - target: {fileID: 4256363701884532847, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_Mass
+      value: 0.099810116
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256363701884532847, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6225038029299371545, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -595,6 +615,14 @@ PrefabInstance:
     - target: {fileID: 6377074391410379371, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
       propertyPath: m_Name
       value: Canvas Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822326608807503893, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822326608807503893, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -692,6 +720,18 @@ PrefabInstance:
     - target: {fileID: 4641322250561372731, guid: 4d45a4c243ba8144fad26a3b30252f83, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453482069238900824, guid: 4d45a4c243ba8144fad26a3b30252f83, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453482069238900824, guid: 4d45a4c243ba8144fad26a3b30252f83, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453482069238900824, guid: 4d45a4c243ba8144fad26a3b30252f83, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 6449985548296110742, guid: 4d45a4c243ba8144fad26a3b30252f83, type: 3}
       propertyPath: setting
