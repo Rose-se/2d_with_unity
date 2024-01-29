@@ -7,7 +7,6 @@ public class Settings : MonoBehaviour
 {
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider volumeSlider;
-    [SerializeField] private Dropdown dropdownGraphics;
     private void Start()
     {
         if(PlayerPrefs.HasKey("volume"))
@@ -29,9 +28,5 @@ public class Settings : MonoBehaviour
     {
         volumeSlider.value = PlayerPrefs.GetFloat("volume");
         SetVolume();
-    }
-    private void GraphicsSetting()
-    {
-
     }
 }

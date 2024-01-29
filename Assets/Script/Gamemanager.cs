@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private UnityEngine.Screen screen;
     [SerializeField] private Canvas gameOverText;
+    [SerializeField] private Canvas gamePauseText;
     private Animator playerAnimator;
     private bool isPlayerDeath;
     private bool isRestarting;
@@ -59,8 +60,22 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CheckPlayerDeath();
+        gamePause();
     }
 
+    private void gamePause()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            gamePauseText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        
+        }
+        else
+        {
+
+        }
+    }
     private IEnumerator DelayedGameOver()
     {
         yield return new WaitForSeconds(2f);  // ปรับตัวเลขตามที่คุณต้องการ
@@ -84,10 +99,6 @@ public class GameManager : MonoBehaviour
                 {
                     StartCoroutine(DelayedGameOver());  // เริ่ม Coroutine ที่หน่วงเวลา
                 }
-            }
-            else
-            {
-                LogError("Player component not found on the player GameObject.");
             }
         }
     }
