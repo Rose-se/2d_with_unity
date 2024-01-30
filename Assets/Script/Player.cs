@@ -20,8 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField] private ParticleSystem collectParticle = null;
     [SerializeField] private GameObject tomb;
     [SerializeField] private Transform[] spawnPoint;
-    [SerializeField] private AudioSource deadsound;
-    [SerializeField] private AudioSource jumpsound;
+    [SerializeField] private AudioClip deadsound;
+    [SerializeField] private AudioClip jumpsound;
     private int currentSpawnpointIndex = 0;
 
     private float movementInput = 0f;
@@ -48,7 +48,8 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpsound.Play();
+            AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+            audioSource.PlayOneShot(jumpsound);
             jumping = true;
         }
         else
@@ -159,7 +160,8 @@ public class Player : MonoBehaviour
         collectParticle.Play();
         SpawnTomb();
         IsDeath = true;
-        deadsound.Play();
+        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.PlayOneShot(deadsound);
         currentSpawnpointIndex++;
     }
 }
