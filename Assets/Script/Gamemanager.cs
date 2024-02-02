@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     [Header("Game Objects")]
     [SerializeField] private GameObject player;
     [SerializeField] private UnityEngine.Screen screen;
+    [SerializeField] private Canvas gameOverText;
+    [SerializeField] private Canvas gamePauseText;
     private Animator playerAnimator;
     private bool isPlayerDeath;
     private bool isRestarting;
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake() 
     {
+        Time.timeScale = 1;
         if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
@@ -56,6 +60,27 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         CheckPlayerDeath();
+        gamePause();
+    }
+
+    private void gamePause()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            gamePauseText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        
+        }
+        else
+        {
+
+        }
+    }
+    private IEnumerator DelayedGameOver()
+    {
+        yield return new WaitForSeconds(2f);  // ปรับตัวเลขตามที่คุณต้องการ
+        gameOverText.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 
     private void CheckPlayerDeath()
@@ -63,7 +88,7 @@ public class GameManager : MonoBehaviour
         bool isPlayerDeath = false;
 
         if (player != null && player.CompareTag("Player") && !isPlayerDeath)
-        {
+        {  
             Player playerComponent = player.GetComponent<Player>();
 
             if (playerComponent != null)
@@ -72,13 +97,8 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                    SceneManager.LoadScene(3);
+                    StartCoroutine(DelayedGameOver());  // เริ่ม Coroutine ที่หน่วงเวลา
                 }
-            }
-            else
-            {
-                LogError("Player component not found on the player GameObject.");
             }
         }
     }
