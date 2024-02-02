@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class wingame : MonoBehaviour
+public class WinGame : MonoBehaviour
 {
     [SerializeField] private Canvas gameWinText;
     private void OnCollisionEnter2D(Collision2D collision)
