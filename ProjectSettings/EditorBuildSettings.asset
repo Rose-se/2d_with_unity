@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SceneLevel/LV2scene.unity
     guid: 7fa379b9e9143ac43abc2bd0c3cd30d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/UI scene/Dead.unity
     guid: 443a93ae61d3929459d30e735d4f5194
-  - enabled: 1
+  - enabled: 0
     path: Assets/UI scene/Settings.unity
     guid: 1e6ede0ea6e693a469d0bf8f773452e1
   m_configObjects: {}
