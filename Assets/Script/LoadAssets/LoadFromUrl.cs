@@ -1,18 +1,20 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class LoadFromUrl : MonoBehaviour
 {
-    public string assetBundleName;
-    public string url = "http://dev-meta-horse-general.oss-ap-northeast-1.aliyuncs.com/_item/_unity_config/_assetbundles/_windows/skin_zebra";
+    [SerializeField] private Image img;
+    string assetUrl = "http://dev-meta-horse-general.oss-ap-northeast-1.aliyuncs.com/_item/_unity_config/_assetbundles/_windows/skin_zebra";
+    string imageUrl = "Assets/AssetBundleData/SkinZebra/T_Zebra.png";
 
     public void DownloadAssets()
     {
-        StartCoroutine(InstantiateObject());
+        StartCoroutine(IEAssetBundle(assetUrl));
     }
 
-    IEnumerator InstantiateObject()
+    IEnumerator IEAssetBundle(string url)
     {
         UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
         yield return www.SendWebRequest();
@@ -23,33 +25,18 @@ public class LoadFromUrl : MonoBehaviour
             yield break;
         }
 
-        AssetBundle remoteAssetBundle = DownloadHandlerAssetBundle.GetContent(www);
+        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(www);
 
-        if (remoteAssetBundle == null)
-        {
-            Debug.LogErrorFormat("Failed to load AssetBundle: {0}", assetBundleName);
-            yield break;
-        }
+        // Load AssetAsync
+        AssetBundleRequest request = assetBundle.LoadAssetAsync<Texture2D>(imageUrl);
+        yield return request;
 
-        // เช็คประเภทข้อมูลที่ดึงมา
-        if (www.downloadHandler is DownloadHandlerAssetBundle)
-        {
-            GameObject prefab = remoteAssetBundle.LoadAsset<GameObject>(assetBundleName);
+        Texture2D texture2D = request.asset as Texture2D;
+        Sprite sprite = Sprite.Create(texture2D, new Rect(0.0f, 0.0f, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f), 100.0f);
 
-            if (prefab != null)
-            {
-                Instantiate(prefab);
-            }
-            else
-            {
-                Debug.LogErrorFormat("Failed to load GameObject from AssetBundle: {0}", assetBundleName);
-            }
-        }
-        else
-        {
-            Debug.LogError("Downloaded data is not an Asset Bundle.");
-        }
+        img.sprite = sprite;
 
-        remoteAssetBundle.Unload(false);
+        // Unload AssetBundle
+        assetBundle.Unload(false);
     }
 }

@@ -11,7 +11,7 @@ public class LoadFromFile : MonoBehaviour
             Debug.Log("Failed to load AssetBundle!");
             return;
         }
-        var prefab = myLoadedAssetBundle.LoadAsset<GameObject>("MyObject");
+        var prefab = myLoadedAssetBundle.LoadAsset<GameObject>("myassetbundle");
         Instantiate(prefab);
     }
 }
