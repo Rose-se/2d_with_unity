@@ -9,6 +9,8 @@ public class ObjectPool : MonoBehaviour
     public GameObject objectToPool;
     public int amountToPool;
 
+    private int nextObjectIndex = 0;
+
     void Awake()
     {
         SharedInstance = this;
@@ -28,14 +30,14 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject()
     {
-        for (int i = 0; i < pooledObjects.Count; i++)
+        GameObject objectToReturn = pooledObjects[nextObjectIndex];
+
+        nextObjectIndex++;
+        if (nextObjectIndex >= pooledObjects.Count)
         {
-            if (!pooledObjects[i].activeInHierarchy)
-            {
-                return pooledObjects[i];
-            }
+            nextObjectIndex = 0;
         }
 
-        return null;
+        return objectToReturn;
     }
 }

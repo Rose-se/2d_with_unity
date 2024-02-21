@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1999677238446963535}
   - component: {fileID: 1104927876828893323}
   - component: {fileID: 3871854591806841532}
+  - component: {fileID: 7430647547041790222}
   m_Layer: 7
   m_Name: Pumpkin2 (3)
   m_TagString: Untagged
@@ -274,6 +275,18 @@ CircleCollider2D:
   m_Offset: {x: 0.076231, y: -0.084049225}
   serializedVersion: 2
   m_Radius: 0.40953445
+--- !u!114 &7430647547041790222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479944833336063454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a99887fb7548645af70f68b0f39374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &804014657917265512
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +338,7 @@ GameObject:
   - component: {fileID: 7926092859946369843}
   - component: {fileID: 1029305032860431604}
   - component: {fileID: 6483720867222826271}
+  - component: {fileID: 4127275932500053612}
   m_Layer: 7
   m_Name: Pumpkin2
   m_TagString: Untagged
@@ -584,6 +598,18 @@ CircleCollider2D:
   m_Offset: {x: 0.076231, y: -0.084049225}
   serializedVersion: 2
   m_Radius: 0.40953445
+--- !u!114 &4127275932500053612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194456942769797789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a99887fb7548645af70f68b0f39374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6519759111516740005
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +625,7 @@ GameObject:
   - component: {fileID: 5554627185260288728}
   - component: {fileID: 2204098127913313608}
   - component: {fileID: 5338983465139687224}
+  - component: {fileID: 4464536470882213304}
   m_Layer: 7
   m_Name: Pumpkin2 (2)
   m_TagString: Untagged
@@ -858,6 +885,18 @@ CircleCollider2D:
   m_Offset: {x: 0.076231, y: -0.084049225}
   serializedVersion: 2
   m_Radius: 0.40953445
+--- !u!114 &4464536470882213304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519759111516740005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a99887fb7548645af70f68b0f39374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6923085213376977514
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +912,7 @@ GameObject:
   - component: {fileID: 6808163339800874318}
   - component: {fileID: 6308212963595338271}
   - component: {fileID: 3657977683174266307}
+  - component: {fileID: 3507902529196904819}
   m_Layer: 7
   m_Name: Pumpkin2 (4)
   m_TagString: Untagged
@@ -1132,6 +1172,18 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 6923085213376977514}
+--- !u!114 &3507902529196904819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923085213376977514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a99887fb7548645af70f68b0f39374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8205498015542059388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1199,7 @@ GameObject:
   - component: {fileID: 5276620003919806899}
   - component: {fileID: 72475745737946574}
   - component: {fileID: 581470146959211084}
+  - component: {fileID: 2250457169261493229}
   m_Layer: 7
   m_Name: Pumpkin2 (1)
   m_TagString: Untagged
@@ -1406,3 +1459,15 @@ CircleCollider2D:
   m_Offset: {x: 0.076231, y: -0.084049225}
   serializedVersion: 2
   m_Radius: 0.40953445
+--- !u!114 &2250457169261493229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205498015542059388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a99887fb7548645af70f68b0f39374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

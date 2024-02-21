@@ -3,30 +3,24 @@ using UnityEngine;
 
 public class Fireoffline : MonoBehaviour
 {
+    [SerializeField] private float objectLifetime = 1.5f;
+    private GameObject myGameObject;
+
     void Awake()
     {
-        StartCoroutine(LifeTimeCoroutine());
+
+        StartCoroutine(LifeTimeCoroutine(objectLifetime));
+        myGameObject = gameObject;
     }
 
-    private IEnumerator LifeTimeCoroutine()
+    private IEnumerator LifeTimeCoroutine(float lifetime)
     {
         // Wait for 2 seconds
-        yield return new WaitForSeconds(0.5f);
-
-        // Check if the object is still active before destroying
-        if (gameObject.activeSelf)
+        yield return new WaitForSeconds(lifetime);
+        if (myGameObject.activeSelf)
         {
-            gameObject.SetActive(false);
+            myGameObject.SetActive(false);
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Mob"))
-        {
-            // Do something, e.g., set a score, play a sound, etc.
-            // For now, let's just destroy the GameObject.
-            gameObject.SetActive(false);
-        }
+        
     }
 }
