@@ -11,7 +11,7 @@ public class Fireoffline : MonoBehaviour
     private IEnumerator LifeTimeCoroutine()
     {
         // Wait for 2 seconds
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
 
         // Check if the object is still active before destroying
         if (gameObject.activeSelf)
