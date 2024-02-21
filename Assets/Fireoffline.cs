@@ -1,26 +1,22 @@
 using System.Collections;
 using UnityEngine;
 
-public class Fireoffline : MonoBehaviour
+public class FireOffline : MonoBehaviour
 {
-    [SerializeField] private float objectLifetime = 1.5f;
-    private GameObject myGameObject;
-
-    void Awake()
+    void Update()
     {
-
-        StartCoroutine(LifeTimeCoroutine(objectLifetime));
-        myGameObject = gameObject;
+        if(gameObject.activeSelf)
+        {
+        StartCoroutine(LifeTimeCoroutine());
+        }
     }
 
-    private IEnumerator LifeTimeCoroutine(float lifetime)
+    private IEnumerator LifeTimeCoroutine()
     {
-        // Wait for 2 seconds
-        yield return new WaitForSeconds(lifetime);
-        if (myGameObject.activeSelf)
+        yield return new WaitForSeconds(0.5f);
+        if (gameObject.activeSelf)
         {
-            myGameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
-        
     }
 }

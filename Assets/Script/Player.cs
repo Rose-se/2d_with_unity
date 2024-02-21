@@ -22,15 +22,17 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform[] spawnPoint;
     [SerializeField] private AudioClip deadsound;
     [SerializeField] private AudioClip jumpsound;
+    [SerializeField] private int numberOfRounds = 1;
+    [SerializeField] private float timeBetweenRounds = 0.5f;
     private int currentSpawnpointIndex = 0;
+
+    private GameObject currentFire;
 
     private float movementInput = 0f;
     private bool attacking = false;
     private bool jumping = false;
 
     private const float FallingThreshold = -0.5f;
-    private const KeyCode JumpKeyCode = KeyCode.Space;
-    private const KeyCode AttackKeyCode = KeyCode.F;
 
     private void Start()
     {
@@ -61,7 +63,6 @@ public class Player : MonoBehaviour
         {
             attacking = true; // Start attacking
             Attack();
-            
         }
         else
         {
@@ -115,30 +116,31 @@ public class Player : MonoBehaviour
         anim.SetInteger("state", (int)state);
     }
 
-    private void Attack()
+private void Attack()
+{
+    currentFire = ObjectPool.SharedInstance.GetPooledObject();
+    if (currentFire != null)
     {
-        GameObject fire = ObjectPool.SharedInstance.GetPooledObject();
-        if (fire != null)
+        currentFire.transform.position = grabPoint.transform.position;
+        currentFire.transform.rotation = grabPoint.transform.rotation;
+
+        currentFire.SetActive(true);
+
+        Rigidbody2D bulletRb = currentFire.GetComponent<Rigidbody2D>();
+        Vector2 forceDirection = transform.right;
+
+        if (GetComponent<SpriteRenderer>().flipX)
         {
-            fire.transform.position = grabPoint.transform.position;
-            fire.transform.rotation = grabPoint.transform.rotation;
+            forceDirection = -forceDirection;
+        }
 
-            fire.SetActive(true);
-
-            Rigidbody2D bulletRb = fire.GetComponent<Rigidbody2D>();
-            Vector2 forceDirection = transform.right;
-            if (GetComponent<SpriteRenderer>().flipX)
-            {
-                forceDirection = -forceDirection;
-            }
-
-            if (bulletRb != null)
-            {
-                // Apply force to make the bullet move with a force of 10f along the grabPoint's right direction
-                bulletRb.AddForce(forceDirection * 10f, ForceMode2D.Impulse);
-            }
+        if (bulletRb != null)
+        {
+            bulletRb.velocity = forceDirection * 20f;  // Use velocity instead of AddForce
         }
     }
+}
+
 
     private bool IsGrounded()
     {

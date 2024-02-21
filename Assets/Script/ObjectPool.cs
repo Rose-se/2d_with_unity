@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +8,6 @@ public class ObjectPool : MonoBehaviour
     public GameObject objectToPool;
     public int amountToPool;
 
-    private int nextObjectIndex = 0;
-
     void Awake()
     {
         SharedInstance = this;
@@ -19,25 +16,22 @@ public class ObjectPool : MonoBehaviour
     void Start()
     {
         pooledObjects = new List<GameObject>();
-        GameObject tmp;
-        for (int i = 0; i < amountToPool; i++)
-        {
-            tmp = Instantiate(objectToPool);
-            tmp.SetActive(false);
-            pooledObjects.Add(tmp);
-        }
+        GameObject tmp = Instantiate(objectToPool);
+        tmp.SetActive(false);
+        pooledObjects.Add(tmp);
     }
+
 
     public GameObject GetPooledObject()
     {
-        GameObject objectToReturn = pooledObjects[nextObjectIndex];
-
-        nextObjectIndex++;
-        if (nextObjectIndex >= pooledObjects.Count)
+        for (int i = 0; i < pooledObjects.Count; i++)
         {
-            nextObjectIndex = 0;
+            if (!pooledObjects[i].activeInHierarchy)
+            {
+                return pooledObjects[i];
+            }
         }
 
-        return objectToReturn;
+        return null;
     }
 }
