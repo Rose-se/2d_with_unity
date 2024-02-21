@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     private enum MovementState { Idle, Running, Jumping, Falling, Attack }
-
+    [SerializeField] private Transform grabPoint;
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float jumpForce = 16f;
     [SerializeField] private float fallSpeed = 2.5f;
@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.F))
         {
             attacking = true; // Start attacking
+            Attack();
+            
         }
         else
         {
@@ -111,6 +113,31 @@ public class Player : MonoBehaviour
         }
 
         anim.SetInteger("state", (int)state);
+    }
+
+    private void Attack()
+    {
+        GameObject fire = ObjectPool.SharedInstance.GetPooledObject();
+        if (fire != null)
+        {
+            fire.transform.position = grabPoint.transform.position;
+            fire.transform.rotation = grabPoint.transform.rotation;
+
+            fire.SetActive(true);
+
+            Rigidbody2D bulletRb = fire.GetComponent<Rigidbody2D>();
+            Vector2 forceDirection = transform.right;
+            if (GetComponent<SpriteRenderer>().flipX)
+            {
+                forceDirection = -forceDirection;
+            }
+
+            if (bulletRb != null)
+            {
+                // Apply force to make the bullet move with a force of 10f along the grabPoint's right direction
+                bulletRb.AddForce(forceDirection * 10f, ForceMode2D.Impulse);
+            }
+        }
     }
 
     private bool IsGrounded()
