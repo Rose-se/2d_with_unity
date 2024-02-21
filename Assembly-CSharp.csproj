@@ -72,6 +72,7 @@
     <Compile Include="Assets\Script\ActiveSetting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Fireoffline.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Script\Flip.cs" />
     <Compile Include="Assets\Script\Singletons.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Script\Settings.cs" />
     <Compile Include="Assets\Script\Movingobject.cs" />
+    <Compile Include="Assets\Script\Object Pool.cs" />
     <Compile Include="Assets\Script\SpwanFireballmob.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Script\RaycastScript.cs" />
