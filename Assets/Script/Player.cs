@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -22,8 +21,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform[] spawnPoint;
     [SerializeField] private AudioClip deadsound;
     [SerializeField] private AudioClip jumpsound;
-    [SerializeField] private int numberOfRounds = 1;
-    [SerializeField] private float timeBetweenRounds = 0.5f;
+
+
     private int currentSpawnpointIndex = 0;
 
     private GameObject currentFire;
@@ -116,30 +115,30 @@ public class Player : MonoBehaviour
         anim.SetInteger("state", (int)state);
     }
 
-private void Attack()
-{
-    currentFire = ObjectPool.SharedInstance.GetPooledObject();
-    if (currentFire != null)
+    private void Attack()
     {
-        currentFire.transform.position = grabPoint.transform.position;
-        currentFire.transform.rotation = grabPoint.transform.rotation;
-
-        currentFire.SetActive(true);
-
-        Rigidbody2D bulletRb = currentFire.GetComponent<Rigidbody2D>();
-        Vector2 forceDirection = transform.right;
-
-        if (GetComponent<SpriteRenderer>().flipX)
+        currentFire = ObjectPool.SharedInstance.GetPooledObject();
+        if(currentFire != null)
         {
-            forceDirection = -forceDirection;
-        }
+            currentFire.transform.position = grabPoint.transform.position;
+            currentFire.transform.rotation = grabPoint.transform.rotation;
 
-        if (bulletRb != null)
-        {
-            bulletRb.velocity = forceDirection * 20f;  // Use velocity instead of AddForce
+            currentFire.SetActive(true);
+
+            Rigidbody2D bulletRb = currentFire.GetComponent<Rigidbody2D>();
+            Vector2 forceDirection = transform.right;
+
+            if (GetComponent<SpriteRenderer>().flipX)
+            {
+                forceDirection = -forceDirection;
+            }
+
+            if(bulletRb != null)
+            {
+                bulletRb.velocity = forceDirection * 20f;  // Use velocity instead of AddForce
+            }
         }
     }
-}
 
 
     private bool IsGrounded()
@@ -150,16 +149,16 @@ private void Attack()
         // Perform a raycast to check if the player is grounded on a regular surface
         RaycastHit2D hitRegularGround = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius, groundLayer);
 
-        if (hitRegularGround.collider != null)
-        {
-            return true;
-        }
+            if (hitRegularGround.collider != null)
+            {
+                return true;
+            }
         // If not grounded on a regular surface, check if the object below is a falling object
         RaycastHit2D hitFallingObj = Physics2D.Raycast(colliderCenter, Vector2.down, colliderExtentsY + raycastRadius);
-        if (hitFallingObj.collider != null && hitFallingObj.collider.CompareTag("Untagged"))
-        {
-            return true;
-        }
+            if (hitFallingObj.collider != null && hitFallingObj.collider.CompareTag("Untagged"))
+            {
+                return true;
+            }
         return false;
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -174,9 +173,9 @@ private void Attack()
     {
         if (currentSpawnpointIndex < spawnPoint.Length)
         {
-        Vector2 playerPosition = transform.position; // transform.position ของผู้เล่น
-        Instantiate(tomb, playerPosition, Quaternion.identity);
-        Debug.Log("Spawning tomb at player position");
+            Vector2 playerPosition = transform.position; // transform.position ของผู้เล่น
+            Instantiate(tomb, playerPosition, Quaternion.identity);
+            Debug.Log("Spawning tomb at player position");
         }
         else
         {

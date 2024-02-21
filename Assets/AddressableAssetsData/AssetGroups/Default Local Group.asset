@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b76fd5d6a1dd13d49aa9aae83c808be4
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0d3760d5817a9a643924fec8e9e6da92
+    m_Address: Assets/Prefabs/maincharacter.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Player
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: eb1c5708fdcd1e1439fa960e5610fd6e, type: 2}
   m_SchemaSet:

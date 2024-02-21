@@ -33,12 +33,13 @@ public class GameManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        InitializePlayer();
+        StartCoroutine(CleanupObjectsCoroutine());
     }
 
     private void Start()
     {
-        InitializePlayer();
-        StartCoroutine(CleanupObjectsCoroutine());
+
     }
 
     private void InitializePlayer()
@@ -78,7 +79,7 @@ public class GameManager : MonoBehaviour
     }
     private IEnumerator DelayedGameOver()
     {
-        yield return new WaitForSeconds(2f);  // ปรับตัวเลขตามที่คุณต้องการ
+        yield return new WaitForSeconds(2f);  // 
         gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
@@ -97,7 +98,7 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    StartCoroutine(DelayedGameOver());  // เริ่ม Coroutine ที่หน่วงเวลา
+                    StartCoroutine(DelayedGameOver());  
                 }
             }
         }
