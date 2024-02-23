@@ -13,12 +13,14 @@ public class SpawnPlayer : MonoBehaviour
 
     private void SpawnPlayerAddress()
     {
+        var gamemanager = GameManager.Instance;
         assetReferenceGameObject.InstantiateAsync().Completed +=
         (AsyncOperationHandle<GameObject> handle) =>
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
-                
+                GameObject player = handle.Result;
+                gamemanager.SpawnPlayer(player);
             }
             else
             {

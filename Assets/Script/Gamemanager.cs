@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
 
     [Header("Game Objects")]
-    [SerializeField] private GameObject player;
-    [SerializeField] private UnityEngine.Screen screen;
+    public GameObject player;
+    [SerializeField] private Screen screen;
     [SerializeField] private Canvas gameOverText;
     [SerializeField] private Canvas gamePauseText;
     private Animator playerAnimator;
@@ -33,13 +34,18 @@ public class GameManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        InitializePlayer();
-        StartCoroutine(CleanupObjectsCoroutine());
+
     }
 
     private void Start()
     {
-
+        InitializePlayer();
+        player = GameObject.FindWithTag("Player");
+        StartCoroutine(CleanupObjectsCoroutine());
+    }
+    internal void SpawnPlayer(GameObject spawnedPlayer)
+    {
+        player = spawnedPlayer;
     }
 
     private void InitializePlayer()
