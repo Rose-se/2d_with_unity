@@ -173,9 +173,9 @@ public class Player : MonoBehaviour
     {
         if (currentSpawnpointIndex < spawnPoint.Length)
         {
-            Vector2 playerPosition = transform.position; // transform.position ของผู้เล่น
-            Instantiate(tomb, playerPosition, Quaternion.identity);
-            Debug.Log("Spawning tomb at player position");
+            Vector3 spawnPosition = spawnPoint[currentSpawnpointIndex].position;
+            Instantiate(tomb, spawnPosition, Quaternion.identity);
+            Debug.Log("Spawning tomb at spawn point position");
         }
         else
         {

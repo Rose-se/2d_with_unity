@@ -999,6 +999,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4871697928702849121, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4936524434921282166, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1389502
@@ -1029,6 +1033,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5642220363812832316, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145885172006179185, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: rayPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145885172006179185, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: grabPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145885172006179185, guid: 67358afe05fc72e4889ca74a50811640, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6225038029299371545, guid: 67358afe05fc72e4889ca74a50811640, type: 3}

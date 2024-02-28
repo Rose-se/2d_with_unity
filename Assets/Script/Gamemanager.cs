@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
 
     [Header("Game Objects")]
+    [SerializeField] private AssetReferenceGameObject assetReferenceGameObject;
     public GameObject player;
     [SerializeField] private Screen screen;
     [SerializeField] private Canvas gameOverText;
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake() 
     {
+        
         Time.timeScale = 1;
         if (_instance != null && _instance != this)
         {
@@ -39,15 +43,25 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        InitializePlayer();
-        player = GameObject.FindWithTag("Player");
+        SpawnPlayerAddress();
         StartCoroutine(CleanupObjectsCoroutine());
     }
-    internal void SpawnPlayer(GameObject spawnedPlayer)
+    private void SpawnPlayerAddress()
     {
-        player = spawnedPlayer;
+        assetReferenceGameObject.InstantiateAsync().Completed +=
+        (AsyncOperationHandle<GameObject> handle) =>
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+               player = handle.Result;
+               InitializePlayer();
+            }
+            else
+            {
+                Debug.LogError($"Failed to instantiate player: {handle.DebugName}");
+            }
+        };
     }
-
     private void InitializePlayer()
     {
         if (player == null)
@@ -92,8 +106,6 @@ public class GameManager : MonoBehaviour
 
     private void CheckPlayerDeath()
     {
-        bool isPlayerDeath = false;
-
         if (player != null && player.CompareTag("Player") && !isPlayerDeath)
         {  
             Player playerComponent = player.GetComponent<Player>();
