@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,8 +13,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
 
     [Header("Game Objects")]
-    [SerializeField] private GameObject player;
-    [SerializeField] private UnityEngine.Screen screen;
+    [SerializeField] private AssetReferenceGameObject assetReferenceGameObject;
+    public GameObject player;
+    [SerializeField] private Screen screen;
     [SerializeField] private Canvas gameOverText;
     [SerializeField] private Canvas gamePauseText;
     private Animator playerAnimator;
@@ -23,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake() 
     {
+        
         Time.timeScale = 1;
         if (_instance != null && _instance != this)
         {
@@ -33,14 +38,30 @@ public class GameManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
     }
 
     private void Start()
     {
-        InitializePlayer();
+        SpawnPlayerAddress();
         StartCoroutine(CleanupObjectsCoroutine());
     }
-
+    private void SpawnPlayerAddress()
+    {
+        assetReferenceGameObject.InstantiateAsync().Completed +=
+        (AsyncOperationHandle<GameObject> handle) =>
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+               player = handle.Result;
+               InitializePlayer();
+            }
+            else
+            {
+                Debug.LogError($"Failed to instantiate player: {handle.DebugName}");
+            }
+        };
+    }
     private void InitializePlayer()
     {
         if (player == null)
@@ -78,15 +99,13 @@ public class GameManager : MonoBehaviour
     }
     private IEnumerator DelayedGameOver()
     {
-        yield return new WaitForSeconds(2f);  // ปรับตัวเลขตามที่คุณต้องการ
+        yield return new WaitForSeconds(2f);  // 
         gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
     private void CheckPlayerDeath()
     {
-        bool isPlayerDeath = false;
-
         if (player != null && player.CompareTag("Player") && !isPlayerDeath)
         {  
             Player playerComponent = player.GetComponent<Player>();
@@ -97,7 +116,7 @@ public class GameManager : MonoBehaviour
 
                 if (isPlayerDeath && !isRestarting)
                 {
-                    StartCoroutine(DelayedGameOver());  // เริ่ม Coroutine ที่หน่วงเวลา
+                    StartCoroutine(DelayedGameOver());  
                 }
             }
         }

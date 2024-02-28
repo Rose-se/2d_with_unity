@@ -290,7 +290,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19d723b9fb1af94fa3f20095ddf19c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assetReferenceGameObject:
+    m_AssetGUID: 0d3760d5817a9a643924fec8e9e6da92
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   player: {fileID: 0}
+  gameOverText: {fileID: 0}
+  gamePauseText: {fileID: 0}
 --- !u!114 &6788434521158733808
 MonoBehaviour:
   m_ObjectHideFlags: 0
